@@ -1,0 +1,191 @@
+Determining if files alsa/asoundlib.h exist failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_05b21/fast && /usr/bin/make -f CMakeFiles/cmTC_05b21.dir/build.make CMakeFiles/cmTC_05b21.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05b21.dir/HAVE_ALSA_ASOUNDLIB_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_05b21.dir/HAVE_ALSA_ASOUNDLIB_H.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c:2:10: fatal error: alsa/asoundlib.h: No such file or directory
+ #include <alsa/asoundlib.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_05b21.dir/build.make:66: CMakeFiles/cmTC_05b21.dir/HAVE_ALSA_ASOUNDLIB_H.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_05b21/fast] Error 2
+
+
+Source:
+/* */
+#include <alsa/asoundlib.h>
+
+
+int main(void){return 0;}
+
+Determining if files OpenGL/glu.h exist failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9ef14/fast && /usr/bin/make -f CMakeFiles/cmTC_9ef14.dir/build.make CMakeFiles/cmTC_9ef14.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ef14.dir/HAVE_OPENGL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_9ef14.dir/HAVE_OPENGL_GLU_H.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLU_H.c
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLU_H.c:2:10: fatal error: OpenGL/glu.h: No such file or directory
+ #include <OpenGL/glu.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_9ef14.dir/build.make:66: CMakeFiles/cmTC_9ef14.dir/HAVE_OPENGL_GLU_H.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9ef14/fast] Error 2
+
+
+Source:
+/* */
+#include <OpenGL/glu.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/stdtypes.h exist failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81f87/fast && /usr/bin/make -f CMakeFiles/cmTC_81f87.dir/build.make CMakeFiles/cmTC_81f87.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81f87.dir/HAVE_SYS_STDTYPES_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_81f87.dir/HAVE_SYS_STDTYPES_H.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: sys/stdtypes.h: No such file or directory
+ #include <sys/stdtypes.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_81f87.dir/build.make:66: CMakeFiles/cmTC_81f87.dir/HAVE_SYS_STDTYPES_H.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_81f87/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/stdtypes.h>
+
+
+int main(void){return 0;}
+
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dff51/fast && /usr/bin/make -f CMakeFiles/cmTC_dff51.dir/build.make CMakeFiles/cmTC_dff51.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dff51.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_dff51.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'strlcat' undeclared (first use in this function); did you mean 'strncat'?
+   return ((int*)(&strlcat))[argc];
+                   ^~~~~~~
+                   strncat
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_dff51.dir/build.make:66: CMakeFiles/cmTC_dff51.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dff51/fast] Error 2
+
+
+File /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2f01/fast && /usr/bin/make -f CMakeFiles/cmTC_b2f01.dir/build.make CMakeFiles/cmTC_b2f01.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2f01.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_b2f01.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'strlcpy' undeclared (first use in this function); did you mean 'strncpy'?
+   return ((int*)(&strlcpy))[argc];
+                   ^~~~~~~
+                   strncpy
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_b2f01.dir/build.make:66: CMakeFiles/cmTC_b2f01.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b2f01/fast] Error 2
+
+
+File /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4e8ab/fast && /usr/bin/make -f CMakeFiles/cmTC_4e8ab.dir/build.make CMakeFiles/cmTC_4e8ab.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e8ab.dir/src.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4e8ab.dir/src.c.o   -c /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4e8ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e8ab.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_4e8ab.dir/src.c.o  -o cmTC_4e8ab 
+/usr/bin/ld: CMakeFiles/cmTC_4e8ab.dir/src.c.o: in function `main':
+src.c:(.text.main+0x28): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text.main+0x34): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text.main+0x44): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4e8ab.dir/build.make:87: cmTC_4e8ab] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4e8ab/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9fce1/fast && /usr/bin/make -f CMakeFiles/cmTC_9fce1.dir/build.make CMakeFiles/cmTC_9fce1.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9fce1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9fce1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9fce1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fce1.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9fce1.dir/CheckFunctionExists.c.o  -o cmTC_9fce1  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9fce1.dir/build.make:87: cmTC_9fce1] Error 1
+make[1]: Leaving directory '/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9fce1/fast] Error 2
+
+
+

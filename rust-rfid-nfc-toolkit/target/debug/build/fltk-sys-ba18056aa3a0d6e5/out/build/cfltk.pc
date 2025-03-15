@@ -1,0 +1,15 @@
+prefix="/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out"
+exec_prefix="${prefix}"
+libdir="${prefix}/lib"
+includedir="${prefix}/include"
+
+Name: cfltk
+Description: C Bindings for FLTK
+URL: https://github.com/MoAlyousef/cfltk
+Version: 1.5.4
+
+Requires:
+Requires.private:  x11 xinerama xcursor xfixes xext xrender xft fontconfig cairo pango pangoxft pangocairo gobject-2.0 wayland-client wayland-cursor xkbcommon
+Cflags: -I"${includedir}" 
+Libs: -L"${libdir}" -lcfltk
+Libs.private: -L"${libdir}" -lcfltk -lfltk -lfltk_images -lfltk_z -lfltk_jpeg -lfltk_png -ldbus-1 -lsupc++ -ldl -pthread

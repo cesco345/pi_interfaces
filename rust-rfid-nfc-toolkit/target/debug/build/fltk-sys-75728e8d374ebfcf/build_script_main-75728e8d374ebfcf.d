@@ -1,0 +1,12 @@
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-75728e8d374ebfcf/build_script_main-75728e8d374ebfcf: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/main.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/android.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/bundled.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/emscripten.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/link.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/pkg_config.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/source.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/utils.rs
+
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/build/fltk-sys-75728e8d374ebfcf/build_script_main-75728e8d374ebfcf.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/main.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/android.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/bundled.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/emscripten.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/link.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/pkg_config.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/source.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/utils.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/main.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/android.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/bundled.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/emscripten.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/link.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/pkg_config.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/source.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/build/utils.rs:

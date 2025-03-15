@@ -1,0 +1,41 @@
+[package]
+name = "rust-rfid-nfc-toolkit"
+version = "0.1.0"
+edition = "2021"
+authors = ["Francesco Piscani<stem-apks@gmail.com>"]
+description = "RFID/NFC toolkit for Raspberry Pi with FM17522 support"
+
+[dependencies]
+# Error handling
+anyhow = "1.0"
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
+
+# Hardware access
+rppal = "0.14"  # Raspberry Pi GPIO/SPI access
+clap = "3.2.25"   # Command line argument parser
+hex = "0.4.3"     # For hex encoding/decoding
+
+# UI
+fltk = "1.5.4"  # Fast Light Toolkit 
+fltk-theme = "0.7"
+
+# Signal handling
+ctrlc = "3.2"
+
+# Serialization for Python bridge
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Standard lib extensions
+thiserror = "1.0"
+
+[[bin]]
+name = "test_writer"
+path = "src/bin/test_writer.rs"
+
+[lib]
+name = "rust_rfid_nfc_toolkit"
+path = "src/lib.rs"

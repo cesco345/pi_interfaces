@@ -1,0 +1,11 @@
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/deps/libbitflags-2c4aacd3909fbdf6.rmeta: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/iter.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/parser.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/traits.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/public.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/internal.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/external.rs
+
+/home/pi/rust/pi_afr/rust-rfid-nfc-toolkit/target/debug/deps/bitflags-2c4aacd3909fbdf6.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/iter.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/parser.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/traits.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/public.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/internal.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/external.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/lib.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/iter.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/parser.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/traits.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/public.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/internal.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/bitflags-2.9.0/src/external.rs:
