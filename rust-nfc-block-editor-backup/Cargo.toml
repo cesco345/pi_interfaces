@@ -1,0 +1,12 @@
+[package]
+name = "rust-nfc-block-editor"
+version = "0.1.0"
+edition = "2021"
+authors = ["Francesco Piscani <stem-apks@gmail.com>"]
+description = "A Raspberry Pi NFC/RFID block editor for Mifare cards"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+rppal = "0.14.1"      # Raspberry Pi peripherals access library (GPIO, SPI, etc.)
+thiserror = "1.0.40"  # Error handling

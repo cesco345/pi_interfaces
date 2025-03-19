@@ -1,0 +1,20 @@
+# Cargo.toml
+[package]
+name = "mifare-attack-toolkit"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "Toolkit for testing and attacking Mifare Classic cards"
+
+[dependencies]
+rppal = "0.14.1"  # For SPI communication with MFRC522
+thiserror = "1.0"  # For custom error handling
+ctrlc = "3.2"     # For graceful exit on Ctrl+C
+chrono = "0.4"    # For timestamps in logs
+
+[profile.release]
+opt-level = 3      # Maximum optimization
+lto = true         # Link-time optimization
+codegen-units = 1  # Optimize for file size and compile time
+panic = 'abort'    # No unwinding on release builds
+strip = true       # Strip debug symbols

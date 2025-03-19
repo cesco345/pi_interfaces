@@ -1,0 +1,9 @@
+/home/pi/rust/pi_afr/rust-nfc-block-editor-backup/target/debug/deps/libthiserror-890c54ec982cc19d.rmeta: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/aserror.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/display.rs
+
+/home/pi/rust/pi_afr/rust-nfc-block-editor-backup/target/debug/deps/libthiserror-890c54ec982cc19d.rlib: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/aserror.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/display.rs
+
+/home/pi/rust/pi_afr/rust-nfc-block-editor-backup/target/debug/deps/thiserror-890c54ec982cc19d.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/aserror.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/display.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/lib.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/aserror.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/thiserror-1.0.69/src/display.rs:
