@@ -1,0 +1,9 @@
+[package]
+name = "pn532_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rppal = "0.14.1"
+embedded-hal = "0.2.7"
+linux-embedded-hal = "0.3.2"
