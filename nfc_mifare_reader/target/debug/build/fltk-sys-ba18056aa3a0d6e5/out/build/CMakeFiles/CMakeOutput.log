@@ -1,0 +1,1092 @@
+The system is: Linux - 5.10.103-v7+ - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: ;-ffunction-sections;-fdata-sections;-fPIC;-march=armv7-a;-mfpu=vfpv3-d16;-mfloat-abi=hard
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: ;-ffunction-sections;-fdata-sections;-fPIC;-march=armv7-a;-mfpu=vfpv3-d16;-mfloat-abi=hard
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a916b/fast && /usr/bin/make -f CMakeFiles/cmTC_a916b.dir/build.make CMakeFiles/cmTC_a916b.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a916b.dir/testCCompiler.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_a916b.dir/testCCompiler.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a916b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a916b.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     -rdynamic CMakeFiles/cmTC_a916b.dir/testCCompiler.c.o  -o cmTC_a916b 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_303ab/fast && /usr/bin/make -f CMakeFiles/cmTC_303ab.dir/build.make CMakeFiles/cmTC_303ab.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=vfpv3-d16 -mfloat-abi=hard -mtls-dialect=gnu -marm -march=armv7-a+fp -auxbase-strip CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o -version -ffunction-sections -fdata-sections -fPIC -o /tmp/ccj5vXSn.s
+GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573
+ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"
+ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include
+ /usr/local/include
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed
+ /usr/include/arm-linux-gnueabihf
+ /usr/include
+End of search list.
+GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573
+Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ as -v -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o /tmp/ccj5vXSn.s
+GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+Linking C executable cmTC_303ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_303ab.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -rdynamic CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o  -o cmTC_303ab 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_303ab' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwLMwrY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_303ab /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_303ab' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+    add: [/usr/include/arm-linux-gnueabihf]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  collapse include dir [/usr/include/arm-linux-gnueabihf] ==> [/usr/include/arm-linux-gnueabihf]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8/include;/usr/local/include;/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed;/usr/include/arm-linux-gnueabihf;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_303ab/fast && /usr/bin/make -f CMakeFiles/cmTC_303ab.dir/build.make CMakeFiles/cmTC_303ab.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=vfpv3-d16 -mfloat-abi=hard -mtls-dialect=gnu -marm -march=armv7-a+fp -auxbase-strip CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o -version -ffunction-sections -fdata-sections -fPIC -o /tmp/ccj5vXSn.s]
+  ignore line: [GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  ignore line: [ /usr/include/arm-linux-gnueabihf]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573]
+  ignore line: [Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [ as -v -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o /tmp/ccj5vXSn.s]
+  ignore line: [GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [Linking C executable cmTC_303ab]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_303ab.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -rdynamic CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o  -o cmTC_303ab ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_303ab' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwLMwrY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_303ab /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwLMwrY.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_303ab] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTC_303ab.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> [/usr/lib]
+  collapse library dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dab66/fast && /usr/bin/make -f CMakeFiles/cmTC_dab66.dir/build.make CMakeFiles/cmTC_dab66.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dab66.dir/testCXXCompiler.cxx.o
+/usr/bin/c++    -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_dab66.dir/testCXXCompiler.cxx.o -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_dab66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dab66.dir/link.txt --verbose=1
+/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     -rdynamic CMakeFiles/cmTC_dab66.dir/testCXXCompiler.cxx.o  -o cmTC_dab66 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f31d3/fast && /usr/bin/make -f CMakeFiles/cmTC_f31d3.dir/build.make CMakeFiles/cmTC_f31d3.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=vfpv3-d16 -mfloat-abi=hard -mtls-dialect=gnu -marm -march=armv7-a+fp -auxbase-strip CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -version -ffunction-sections -fdata-sections -fPIC -o /tmp/cckg7oIx.s
+GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573
+ignoring duplicate directory "/usr/include/arm-linux-gnueabihf/c++/8"
+ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"
+ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/8
+ /usr/include/arm-linux-gnueabihf/c++/8
+ /usr/include/c++/8/backward
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include
+ /usr/local/include
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed
+ /usr/include/arm-linux-gnueabihf
+ /usr/include
+End of search list.
+GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573
+Compiler executable checksum: 7defdc925cf5fede452fc531d54623d1
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ as -v -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckg7oIx.s
+GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+Linking CXX executable cmTC_f31d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f31d3.dir/link.txt --verbose=1
+/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -rdynamic CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f31d3 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_f31d3' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPGNIIf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_f31d3 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_f31d3' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp'
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/8]
+    add: [/usr/include/arm-linux-gnueabihf/c++/8]
+    add: [/usr/include/c++/8/backward]
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+    add: [/usr/include/arm-linux-gnueabihf]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/8] ==> [/usr/include/c++/8]
+  collapse include dir [/usr/include/arm-linux-gnueabihf/c++/8] ==> [/usr/include/arm-linux-gnueabihf/c++/8]
+  collapse include dir [/usr/include/c++/8/backward] ==> [/usr/include/c++/8/backward]
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  collapse include dir [/usr/include/arm-linux-gnueabihf] ==> [/usr/include/arm-linux-gnueabihf]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/8;/usr/include/arm-linux-gnueabihf/c++/8;/usr/include/c++/8/backward;/usr/lib/gcc/arm-linux-gnueabihf/8/include;/usr/local/include;/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed;/usr/include/arm-linux-gnueabihf;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f31d3/fast && /usr/bin/make -f CMakeFiles/cmTC_f31d3.dir/build.make CMakeFiles/cmTC_f31d3.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=vfpv3-d16 -mfloat-abi=hard -mtls-dialect=gnu -marm -march=armv7-a+fp -auxbase-strip CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -version -ffunction-sections -fdata-sections -fPIC -o /tmp/cckg7oIx.s]
+  ignore line: [GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573]
+  ignore line: [ignoring duplicate directory "/usr/include/arm-linux-gnueabihf/c++/8"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/8]
+  ignore line: [ /usr/include/arm-linux-gnueabihf/c++/8]
+  ignore line: [ /usr/include/c++/8/backward]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  ignore line: [ /usr/include/arm-linux-gnueabihf]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=89 --param ggc-min-heapsize=111573]
+  ignore line: [Compiler executable checksum: 7defdc925cf5fede452fc531d54623d1]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [ as -v -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckg7oIx.s]
+  ignore line: [GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  ignore line: [Linking CXX executable cmTC_f31d3]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f31d3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -v -rdynamic CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f31d3 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC'  '-mfpu=vfpv3-d16' '-mfloat-abi=hard' '-v' '-rdynamic' '-o' 'cmTC_f31d3' '-shared-libgcc' '-mtls-dialect=gnu' '-marm' '-march=armv7-a+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPGNIIf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_f31d3 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccPGNIIf.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f31d3] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTC_f31d3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> [/usr/lib]
+  collapse library dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2581/fast && /usr/bin/make -f CMakeFiles/cmTC_a2581.dir/build.make CMakeFiles/cmTC_a2581.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2581.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_a2581.dir/CheckIncludeFile.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a2581
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2581.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_a2581.dir/CheckIncludeFile.c.o  -o cmTC_a2581 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2cc5/fast && /usr/bin/make -f CMakeFiles/cmTC_b2cc5.dir/build.make CMakeFiles/cmTC_b2cc5.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2cc5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_b2cc5.dir/CheckIncludeFile.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b2cc5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2cc5.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_b2cc5.dir/CheckIncludeFile.c.o  -o cmTC_b2cc5 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e1436/fast && /usr/bin/make -f CMakeFiles/cmTC_e1436.dir/build.make CMakeFiles/cmTC_e1436.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1436.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_e1436.dir/CheckIncludeFile.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e1436
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1436.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_e1436.dir/CheckIncludeFile.c.o  -o cmTC_e1436 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bffa2/fast && /usr/bin/make -f CMakeFiles/cmTC_bffa2.dir/build.make CMakeFiles/cmTC_bffa2.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bffa2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_bffa2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_bffa2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bffa2.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_bffa2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_bffa2 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_190c2/fast && /usr/bin/make -f CMakeFiles/cmTC_190c2.dir/build.make CMakeFiles/cmTC_190c2.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_190c2.dir/TestEndianess.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_190c2.dir/TestEndianess.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_190c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_190c2.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_190c2.dir/TestEndianess.c.o  -o cmTC_190c2 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of short passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba9c0/fast && /usr/bin/make -f CMakeFiles/cmTC_ba9c0.dir/build.make CMakeFiles/cmTC_ba9c0.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba9c0.dir/SIZEOF_SHORT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_ba9c0.dir/SIZEOF_SHORT.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckTypeSize/SIZEOF_SHORT.c
+Linking C executable cmTC_ba9c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba9c0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_ba9c0.dir/SIZEOF_SHORT.c.o  -o cmTC_ba9c0 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eccca/fast && /usr/bin/make -f CMakeFiles/cmTC_eccca.dir/build.make CMakeFiles/cmTC_eccca.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eccca.dir/SIZEOF_INT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_eccca.dir/SIZEOF_INT.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_eccca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eccca.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_eccca.dir/SIZEOF_INT.c.o  -o cmTC_eccca 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_94031/fast && /usr/bin/make -f CMakeFiles/cmTC_94031.dir/build.make CMakeFiles/cmTC_94031.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94031.dir/SIZEOF_LONG.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_94031.dir/SIZEOF_LONG.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_94031
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94031.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_94031.dir/SIZEOF_LONG.c.o  -o cmTC_94031 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_310ca/fast && /usr/bin/make -f CMakeFiles/cmTC_310ca.dir/build.make CMakeFiles/cmTC_310ca.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_310ca.dir/HAVE_LONG_LONG.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_310ca.dir/HAVE_LONG_LONG.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckTypeSize/HAVE_LONG_LONG.c
+Linking C executable cmTC_310ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_310ca.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_310ca.dir/HAVE_LONG_LONG.c.o  -o cmTC_310ca 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9dd6e/fast && /usr/bin/make -f CMakeFiles/cmTC_9dd6e.dir/build.make CMakeFiles/cmTC_9dd6e.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9dd6e.dir/HAVE_DLFCN_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_9dd6e.dir/HAVE_DLFCN_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_DLFCN_H.c
+Linking C executable cmTC_9dd6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dd6e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_9dd6e.dir/HAVE_DLFCN_H.c.o  -o cmTC_9dd6e 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files GL/glu.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ebd69/fast && /usr/bin/make -f CMakeFiles/cmTC_ebd69.dir/build.make CMakeFiles/cmTC_ebd69.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebd69.dir/HAVE_GL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_ebd69.dir/HAVE_GL_GLU_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_GL_GLU_H.c
+Linking C executable cmTC_ebd69
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebd69.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_ebd69.dir/HAVE_GL_GLU_H.c.o  -o cmTC_ebd69 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files locale.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07b35/fast && /usr/bin/make -f CMakeFiles/cmTC_07b35.dir/build.make CMakeFiles/cmTC_07b35.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07b35.dir/HAVE_LOCALE_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_07b35.dir/HAVE_LOCALE_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_LOCALE_H.c
+Linking C executable cmTC_07b35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07b35.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_07b35.dir/HAVE_LOCALE_H.c.o  -o cmTC_07b35 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdio.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0383/fast && /usr/bin/make -f CMakeFiles/cmTC_d0383.dir/build.make CMakeFiles/cmTC_d0383.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0383.dir/HAVE_STDIO_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_d0383.dir/HAVE_STDIO_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_STDIO_H.c
+Linking C executable cmTC_d0383
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0383.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_d0383.dir/HAVE_STDIO_H.c.o  -o cmTC_d0383 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b969a/fast && /usr/bin/make -f CMakeFiles/cmTC_b969a.dir/build.make CMakeFiles/cmTC_b969a.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b969a.dir/HAVE_STRINGS_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_b969a.dir/HAVE_STRINGS_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_STRINGS_H.c
+Linking C executable cmTC_b969a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b969a.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_b969a.dir/HAVE_STRINGS_H.c.o  -o cmTC_b969a 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/select.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cfcdc/fast && /usr/bin/make -f CMakeFiles/cmTC_cfcdc.dir/build.make CMakeFiles/cmTC_cfcdc.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfcdc.dir/HAVE_SYS_SELECT_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_cfcdc.dir/HAVE_SYS_SELECT_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SELECT_H.c
+Linking C executable cmTC_cfcdc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfcdc.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_cfcdc.dir/HAVE_SYS_SELECT_H.c.o  -o cmTC_cfcdc 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files X11/Xlib.h;X11/Xregion.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2bb88/fast && /usr/bin/make -f CMakeFiles/cmTC_2bb88.dir/build.make CMakeFiles/cmTC_2bb88.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2bb88.dir/HAVE_X11_XREGION_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_2bb88.dir/HAVE_X11_XREGION_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_X11_XREGION_H.c
+Linking C executable cmTC_2bb88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bb88.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_2bb88.dir/HAVE_X11_XREGION_H.c.o  -o cmTC_2bb88 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4dad0/fast && /usr/bin/make -f CMakeFiles/cmTC_4dad0.dir/build.make CMakeFiles/cmTC_4dad0.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dad0.dir/HAVE_PTHREAD_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_4dad0.dir/HAVE_PTHREAD_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_H.c
+Linking C executable cmTC_4dad0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dad0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_4dad0.dir/HAVE_PTHREAD_H.c.o  -o cmTC_4dad0 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files dirent.h exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0add0/fast && /usr/bin/make -f CMakeFiles/cmTC_0add0.dir/build.make CMakeFiles/cmTC_0add0.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0add0.dir/HAVE_DIRENT_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_0add0.dir/HAVE_DIRENT_H.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CheckIncludeFiles/HAVE_DIRENT_H.c
+Linking C executable cmTC_0add0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0add0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_0add0.dir/HAVE_DIRENT_H.c.o  -o cmTC_0add0 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the dlsym exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bf3bc/fast && /usr/bin/make -f CMakeFiles/cmTC_bf3bc.dir/build.make CMakeFiles/cmTC_bf3bc.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf3bc.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_bf3bc.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bf3bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf3bc.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_bf3bc.dir/CheckSymbolExists.c.o  -o cmTC_bf3bc  -ldl 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlsym
+  return ((int*)(&dlsym))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the localeconv exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59880/fast && /usr/bin/make -f CMakeFiles/cmTC_59880.dir/build.make CMakeFiles/cmTC_59880.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59880.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_59880.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_59880
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59880.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_59880.dir/CheckSymbolExists.c.o  -o cmTC_59880 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef localeconv
+  return ((int*)(&localeconv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the png_get_valid exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8c851/fast && /usr/bin/make -f CMakeFiles/cmTC_8c851.dir/build.make CMakeFiles/cmTC_8c851.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c851.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_8c851.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8c851
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c851.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_8c851.dir/CheckSymbolExists.c.o  -o cmTC_8c851  /usr/lib/arm-linux-gnueabihf/libpng.so 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <png.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef png_get_valid
+  return ((int*)(&png_get_valid))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the png_set_tRNS_to_alpha exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2ced0/fast && /usr/bin/make -f CMakeFiles/cmTC_2ced0.dir/build.make CMakeFiles/cmTC_2ced0.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ced0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_2ced0.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2ced0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ced0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_2ced0.dir/CheckSymbolExists.c.o  -o cmTC_2ced0  /usr/lib/arm-linux-gnueabihf/libpng.so 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <png.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef png_set_tRNS_to_alpha
+  return ((int*)(&png_set_tRNS_to_alpha))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the scandir exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ae49/fast && /usr/bin/make -f CMakeFiles/cmTC_3ae49.dir/build.make CMakeFiles/cmTC_3ae49.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ae49.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_3ae49.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3ae49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ae49.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_3ae49.dir/CheckSymbolExists.c.o  -o cmTC_3ae49 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dirent.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef scandir
+  return ((int*)(&scandir))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cfd7a/fast && /usr/bin/make -f CMakeFiles/cmTC_cfd7a.dir/build.make CMakeFiles/cmTC_cfd7a.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfd7a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_cfd7a.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cfd7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfd7a.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_cfd7a.dir/CheckSymbolExists.c.o  -o cmTC_cfd7a 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_669b0/fast && /usr/bin/make -f CMakeFiles/cmTC_669b0.dir/build.make CMakeFiles/cmTC_669b0.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_669b0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_669b0.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_669b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_669b0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_669b0.dir/CheckSymbolExists.c.o  -o cmTC_669b0 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b09e/fast && /usr/bin/make -f CMakeFiles/cmTC_5b09e.dir/build.make CMakeFiles/cmTC_5b09e.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b09e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_5b09e.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5b09e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b09e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_5b09e.dir/CheckSymbolExists.c.o  -o cmTC_5b09e 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setenv exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_912ce/fast && /usr/bin/make -f CMakeFiles/cmTC_912ce.dir/build.make CMakeFiles/cmTC_912ce.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_912ce.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_912ce.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_912ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_912ce.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_912ce.dir/CheckSymbolExists.c.o  -o cmTC_912ce 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setenv
+  return ((int*)(&setenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the trunc exist passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e672c/fast && /usr/bin/make -f CMakeFiles/cmTC_e672c.dir/build.make CMakeFiles/cmTC_e672c.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e672c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_e672c.dir/CheckSymbolExists.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e672c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e672c.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_e672c.dir/CheckSymbolExists.c.o  -o cmTC_e672c  /usr/lib/arm-linux-gnueabihf/libm.so 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef trunc
+  return ((int*)(&trunc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function XOpenDisplay exists in the /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_016ad/fast && /usr/bin/make -f CMakeFiles/cmTC_016ad.dir/build.make CMakeFiles/cmTC_016ad.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_016ad.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_016ad.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_016ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_016ad.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_016ad.dir/CheckFunctionExists.c.o  -o cmTC_016ad  /usr/lib/arm-linux-gnueabihf/libX11.so /usr/lib/arm-linux-gnueabihf/libXext.so 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3efbc/fast && /usr/bin/make -f CMakeFiles/cmTC_3efbc.dir/build.make CMakeFiles/cmTC_3efbc.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3efbc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_3efbc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3efbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3efbc.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_3efbc.dir/CheckFunctionExists.c.o  -o cmTC_3efbc 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_da22c/fast && /usr/bin/make -f CMakeFiles/cmTC_da22c.dir/build.make CMakeFiles/cmTC_da22c.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da22c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_da22c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_da22c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da22c.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_da22c.dir/CheckFunctionExists.c.o  -o cmTC_da22c 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1d5b4/fast && /usr/bin/make -f CMakeFiles/cmTC_1d5b4.dir/build.make CMakeFiles/cmTC_1d5b4.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d5b4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_1d5b4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1d5b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d5b4.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_1d5b4.dir/CheckFunctionExists.c.o  -o cmTC_1d5b4 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b089e/fast && /usr/bin/make -f CMakeFiles/cmTC_b089e.dir/build.make CMakeFiles/cmTC_b089e.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b089e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_b089e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b089e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b089e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_b089e.dir/CheckFunctionExists.c.o  -o cmTC_b089e 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2d9c/fast && /usr/bin/make -f CMakeFiles/cmTC_e2d9c.dir/build.make CMakeFiles/cmTC_e2d9c.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2d9c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_e2d9c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e2d9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2d9c.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_e2d9c.dir/CheckFunctionExists.c.o  -o cmTC_e2d9c  -lICE 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_95fae/fast && /usr/bin/make -f CMakeFiles/cmTC_95fae.dir/build.make CMakeFiles/cmTC_95fae.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95fae.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard    -o CMakeFiles/cmTC_95fae.dir/CheckIncludeFile.c.o   -c /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_95fae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95fae.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard     CMakeFiles/cmTC_95fae.dir/CheckIncludeFile.c.o  -o cmTC_95fae 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9059b/fast && /usr/bin/make -f CMakeFiles/cmTC_9059b.dir/build.make CMakeFiles/cmTC_9059b.dir/build
+make[1]: Entering directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9059b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9059b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9059b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9059b.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9059b.dir/CheckFunctionExists.c.o  -o cmTC_9059b  -lpthread 
+make[1]: Leaving directory '/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/CMakeFiles/CMakeTmp'
+
+
+

@@ -1,0 +1,773 @@
+cargo:rerun-if-changed=build/android.rs
+cargo:rerun-if-changed=build/bundled.rs
+cargo:rerun-if-changed=build/link.rs
+cargo:rerun-if-changed=build/main.rs
+cargo:rerun-if-changed=build/source.rs
+cargo:rerun-if-changed=build/utils.rs
+cargo:rerun-if-changed=build/fltk_config.rs
+cargo:rerun-if-changed=build/pkg_config.rs
+cargo:rerun-if-env-changed=CC
+cargo:rerun-if-env-changed=CXX
+cargo:rerun-if-env-changed=CFLTK_TOOLCHAIN
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=CFLTK_WAYLAND_ONLY
+cargo:rerun-if-env-changed=CFLTK_GENERATE_BUNDLE_DIR
+cargo:rerun-if-changed=cfltk/CMakeLists.txt
+cargo:rerun-if-changed=cfltk/include/cfl.h
+cargo:rerun-if-changed=cfltk/include/cfl_widget.h
+cargo:rerun-if-changed=cfltk/include/cfl_group.h
+cargo:rerun-if-changed=cfltk/include/cfl_input.h
+cargo:rerun-if-changed=cfltk/include/cfl_window.h
+cargo:rerun-if-changed=cfltk/include/cfl_button.h
+cargo:rerun-if-changed=cfltk/include/cfl_box.h
+cargo:rerun-if-changed=cfltk/include/cfl_menu.h
+cargo:rerun-if-changed=cfltk/include/cfl_dialog.h
+cargo:rerun-if-changed=cfltk/include/cfl_valuator.h
+cargo:rerun-if-changed=cfltk/include/cfl_browser.h
+cargo:rerun-if-changed=cfltk/include/cfl_misc.h
+cargo:rerun-if-changed=cfltk/include/cfl_text.h
+cargo:rerun-if-changed=cfltk/include/cfl_image.h
+cargo:rerun-if-changed=cfltk/include/cfl_draw.h
+cargo:rerun-if-changed=cfltk/include/cfl_table.h
+cargo:rerun-if-changed=cfltk/include/cfl_surface.h
+cargo:rerun-if-changed=cfltk/include/cfl_printer.h
+cargo:rerun-if-changed=cfltk/include/cfl_utils.h
+cargo:rerun-if-changed=cfltk/include/cfl_macros.h
+cargo:rerun-if-changed=cfltk/include/cfl_lock.h
+cargo:rerun-if-changed=cfltk/include/cfl_prefs.h
+cargo:rerun-if-changed=cfltk/include/cfl_widget.hpp
+cargo:rerun-if-changed=cfltk/src/cfl_lock.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_new.cpp
+cargo:rerun-if-changed=cfltk/src/cfl.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_widget.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_group.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_window.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_button.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_box.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_menu.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_dialog.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_valuator.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_browser.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_misc.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_text.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_image.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_input.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_draw.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_table.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_tree.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_surface.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_printer.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_font.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_utils.cpp
+cargo:rerun-if-changed=cfltk/src/cfl_prefs.cpp
+cargo:rerun-if-changed=cfltk/src/Fl_Simple_Terminal.cxx
+cargo:rerun-if-changed=cfltk/src/cfl_nswindow.m
+cargo:rerun-if-changed=cfltk/src/cfl_platform.cpp
+cargo:rerun-if-changed=cfltk/fltk.patch
+CMAKE_TOOLCHAIN_FILE_armv7-unknown-linux-gnueabihf = None
+CMAKE_TOOLCHAIN_FILE_armv7_unknown_linux_gnueabihf = None
+HOST_CMAKE_TOOLCHAIN_FILE = None
+CMAKE_TOOLCHAIN_FILE = None
+CMAKE_GENERATOR_armv7-unknown-linux-gnueabihf = None
+CMAKE_GENERATOR_armv7_unknown_linux_gnueabihf = None
+HOST_CMAKE_GENERATOR = None
+CMAKE_GENERATOR = None
+CMAKE_PREFIX_PATH_armv7-unknown-linux-gnueabihf = None
+CMAKE_PREFIX_PATH_armv7_unknown_linux_gnueabihf = None
+HOST_CMAKE_PREFIX_PATH = None
+CMAKE_PREFIX_PATH = None
+CMAKE_armv7-unknown-linux-gnueabihf = None
+CMAKE_armv7_unknown_linux_gnueabihf = None
+HOST_CMAKE = None
+CMAKE = None
+running: cd "/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build" && CMAKE_PREFIX_PATH="" LC_ALL="C" "cmake" "/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk" "-DFLTK_USE_SYSTEM_LIBPNG=OFF" "-DFLTK_USE_SYSTEM_LIBJPEG=OFF" "-DFLTK_USE_SYSTEM_ZLIB=OFF" "-DCFLTK_LINK_IMAGES=ON" "-DOpenGL_GL_PREFERENCE=GLVND" "-DFLTK_BUILD_GL=OFF" "-DCFLTK_USE_OPENGL=OFF" "-DFLTK_USE_PANGO=ON" "-DFLTK_GRAPHICS_CAIRO=ON" "-DFLTK_BACKEND_WAYLAND=OFF" "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" "-DCFLTK_CARGO_BUILD=ON" "-DFLTK_BUILD_EXAMPLES=OFF" "-DFLTK_BUILD_TEST=OFF" "-DFLTK_BUILD_FLUID=OFF" "-DFLTK_BUILD_FLTK_OPTIONS=OFF" "-DFLTK_OPTION_LARGE_FILE=ON" "-DFLTK_BUILD_HTML_DOCS=OFF" "-DFLTK_BUILD_PDF_DOCS=OFF" "-DCMAKE_INSTALL_PREFIX=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29") 
+-- Looking for POSIX compatible scandir
+-- POSIX compatible scandir - found
+-- Found Doxygen: /usr/bin/doxygen (found version "1.8.13") found components: doxygen dot 
+-- Could NOT find LATEX (missing: LATEX_COMPILER) 
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Checking for module 'cairo'
+--   Found cairo, version 1.16.0
+-- Checking for module 'pangoxft'
+--   Found pangoxft, version 1.42.3
+-- Checking for module 'pangocairo'
+--   Found pangocairo, version 1.42.3
+-- Warning: fluid not found on the build system!
+-- Configuration Summary for FLTK 1.4.2 generated by CMake 3.16.3 --
+
+-- The following OPTIONAL packages have been found:
+
+ * Doxygen
+
+-- The following OPTIONAL packages have not been found:
+
+ * LATEX
+
+-- Static libraries    will be built in: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/fltk/lib
+-- Shared libraries    will not be built (set FLTK_BUILD_SHARED_LIBS=ON to build)
+-- The forms library   will be built in: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/fltk/lib
+-- The OpenGL library  will not be built (set FLTK_BUILD_GL=ON to build)
+-- fluid               will not be built (set FLTK_BUILD_FLUID=ON to build)
+-- fltk-options        will not be built (set FLTK_BUILD_FLTK_OPTIONS=ON to build)
+-- Test programs       will not be built (set FLTK_BUILD_TEST=ON to build)
+-- Example programs    will not be built (set FLTK_BUILD_EXAMPLES=ON to build)
+-- 
+-- Build configuration      Debug
+-- Installation prefix      /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out
+-- Bundled Libraries        JPEG     = Bundled
+--                          PNG      = Bundled
+--                          ZLIB     = Bundled
+-- Use Wayland              No (X11 is used)
+-- All drawing uses Cairo   Yes
+-- Use Pango                Yes
+-- Fl_Cairo_Window support  No
+-- Use std::                No
+-- End of Configuration Summary --
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build
+running: cd "/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build" && LC_ALL="C" MAKEFLAGS="-j --jobserver-fds=8,9 --jobserver-auth=8,9" "cmake" "--build" "/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build" "--target" "install" "--config" "Debug"
+Scanning dependencies of target cfltk
+[  0%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_new.cpp.o
+[  0%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_lock.cpp.o
+[  0%] Building CXX object CMakeFiles/cfltk.dir/src/cfl.cpp.o
+[  1%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_window.cpp.o
+[  1%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_button.cpp.o
+Scanning dependencies of target fltk_z
+[  2%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/adler32.c.o
+[  2%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_widget.cpp.o
+[  3%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_group.cpp.o
+[  3%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/compress.c.o
+[  3%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/crc32.c.o
+[  4%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/deflate.c.o
+[  4%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzclose.c.o
+[  4%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzlib.c.o
+[  5%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzread.c.o
+[  5%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzwrite.c.o
+[  5%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inflate.c.o
+[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/infback.c.o
+[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inftrees.c.o
+[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inffast.c.o
+[  7%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/trees.c.o
+[  7%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/uncompr.c.o
+[  7%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/zutil.c.o
+[  8%] Linking C static library ../lib/libfltk_z.a
+[  8%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_text.cpp.o
+[  8%] Built target fltk_z
+[  8%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_box.cpp.o
+Scanning dependencies of target fltk_jpeg
+[  8%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jmemnobs.c.o
+[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jaricom.c.o
+[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcomapi.c.o
+[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jutils.c.o
+[ 10%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_input.cpp.o
+[ 11%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jerror.c.o
+[ 11%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jmemmgr.c.o
+[ 11%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcapimin.c.o
+[ 12%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcapistd.c.o
+[ 12%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcarith.c.o
+[ 12%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jctrans.c.o
+[ 13%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcparam.c.o
+[ 13%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdatadst.c.o
+[ 13%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcinit.c.o
+[ 14%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmaster.c.o
+[ 14%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_menu.cpp.o
+[ 14%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmarker.c.o
+[ 14%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmainct.c.o
+[ 14%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcprepct.c.o
+[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jccoefct.c.o
+[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jccolor.c.o
+[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcsample.c.o
+[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jchuff.c.o
+[ 16%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_dialog.cpp.o
+[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcdctmgr.c.o
+[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctfst.c.o
+[ 17%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_valuator.cpp.o
+[ 18%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctflt.c.o
+[ 18%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctint.c.o
+[ 18%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdapimin.c.o
+[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdapistd.c.o
+[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdarith.c.o
+[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdtrans.c.o
+[ 20%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdatasrc.c.o
+[ 20%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmaster.c.o
+[ 20%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdinput.c.o
+[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmarker.c.o
+[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdhuff.c.o
+[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmainct.c.o
+[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdcoefct.c.o
+[ 21%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_browser.cpp.o
+[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdpostct.c.o
+[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jddctmgr.c.o
+[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctfst.c.o
+[ 23%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctflt.c.o
+[ 23%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctint.c.o
+[ 23%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_misc.cpp.o
+[ 23%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdsample.c.o
+[ 24%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdcolor.c.o
+[ 24%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jquant1.c.o
+[ 24%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jquant2.c.o
+[ 25%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmerge.c.o
+[ 25%] Linking C static library ../lib/libfltk_jpeg.a
+[ 26%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_image.cpp.o
+[ 26%] Built target fltk_jpeg
+[ 26%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_draw.cpp.o
+[ 26%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_table.cpp.o
+Scanning dependencies of target fltk
+[ 26%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl.cxx.o
+[ 27%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Adjuster.cxx.o
+[ 27%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_tree.cpp.o
+[ 27%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Bitmap.cxx.o
+[ 27%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser.cxx.o
+[ 28%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_surface.cpp.o
+[ 29%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser_.cxx.o
+[ 29%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_font.cpp.o
+[ 29%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser_load.cxx.o
+[ 29%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_utils.cpp.o
+[ 30%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_prefs.cpp.o
+[ 30%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Box.cxx.o
+[ 30%] Building CXX object CMakeFiles/cfltk.dir/src/Fl_Simple_Terminal.cxx.o
+[ 30%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Button.cxx.o
+[ 30%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_platform.cpp.o
+[ 31%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_printer.cpp.o
+[ 32%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Chart.cxx.o
+[ 32%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Check_Browser.cxx.o
+[ 32%] Linking CXX static library libcfltk.a
+[ 32%] Built target cfltk
+[ 32%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Check_Button.cxx.o
+[ 33%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Choice.cxx.o
+[ 33%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Clock.cxx.o
+Scanning dependencies of target fltk_png
+[ 33%] Building C object fltk/png/CMakeFiles/fltk_png.dir/png.c.o
+[ 34%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngerror.c.o
+[ 34%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Color_Chooser.cxx.o
+[ 34%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngget.c.o
+[ 35%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Copy_Surface.cxx.o
+[ 35%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngmem.c.o
+[ 35%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngpread.c.o
+[ 35%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Counter.cxx.o
+[ 36%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngread.c.o
+[ 36%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrio.c.o
+[ 36%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Device.cxx.o
+[ 37%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Dial.cxx.o
+[ 37%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrtran.c.o
+[ 37%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Double_Window.cxx.o
+[ 38%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrutil.c.o
+[ 38%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Browser.cxx.o
+[ 39%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Chooser.cxx.o
+[ 39%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngset.c.o
+[ 39%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Chooser2.cxx.o
+[ 39%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngtrans.c.o
+[ 40%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwio.c.o
+[ 40%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Icon.cxx.o
+[ 40%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwrite.c.o
+[ 40%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwtran.c.o
+[ 40%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Input.cxx.o
+[ 41%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Flex.cxx.o
+[ 42%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwutil.c.o
+[ 42%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/arm_init.c.o
+[ 42%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Graphics_Driver.cxx.o
+[ 42%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/filter_neon_intrinsics.c.o
+[ 42%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Grid.cxx.o
+[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/palette_neon_intrinsics.c.o
+[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/powerpc/powerpc_init.c.o
+[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/powerpc/filter_vsx_intrinsics.c.o
+[ 44%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Group.cxx.o
+[ 44%] Linking C static library ../lib/libfltk_png.a
+[ 44%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Help_View.cxx.o
+[ 44%] Built target fltk_png
+[ 44%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Image.cxx.o
+[ 45%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Image_Surface.cxx.o
+[ 45%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input.cxx.o
+[ 45%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input_.cxx.o
+[ 46%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input_Choice.cxx.o
+[ 46%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Int_Vector.cxx.o
+[ 46%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Light_Button.cxx.o
+[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu.cxx.o
+[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_.cxx.o
+[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Bar.cxx.o
+[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Button.cxx.o
+[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Window.cxx.o
+[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_add.cxx.o
+[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_global.cxx.o
+[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Message.cxx.o
+[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Multi_Label.cxx.o
+[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser.cxx.o
+[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Overlay_Window.cxx.o
+[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Pack.cxx.o
+[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Paged_Device.cxx.o
+[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Pixmap.cxx.o
+[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Positioner.cxx.o
+[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Preferences.cxx.o
+[ 52%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Printer.cxx.o
+[ 52%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Progress.cxx.o
+[ 52%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Repeat_Button.cxx.o
+[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Return_Button.cxx.o
+[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Roller.cxx.o
+[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Round_Button.cxx.o
+[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scheme.cxx.o
+[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scheme_Choice.cxx.o
+[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scroll.cxx.o
+[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Screen_Driver.cxx.o
+[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scrollbar.cxx.o
+[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Shared_Image.cxx.o
+[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Shortcut_Button.cxx.o
+[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Single_Window.cxx.o
+[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Slider.cxx.o
+[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Spinner.cxx.o
+[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_String.cxx.o
+[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Sys_Menu_Bar.cxx.o
+[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_System_Driver.cxx.o
+[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Table.cxx.o
+[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Table_Row.cxx.o
+[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tabs.cxx.o
+[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Terminal.cxx.o
+[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Buffer.cxx.o
+[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Display.cxx.o
+[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Editor.cxx.o
+[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tile.cxx.o
+[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tiled_Image.cxx.o
+[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Timeout.cxx.o
+[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tooltip.cxx.o
+[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree.cxx.o
+[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Item_Array.cxx.o
+[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Item.cxx.o
+[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Prefs.cxx.o
+[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Valuator.cxx.o
+[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Input.cxx.o
+[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Output.cxx.o
+[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Slider.cxx.o
+[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Widget.cxx.o
+[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Widget_Surface.cxx.o
+[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window.cxx.o
+[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_Driver.cxx.o
+[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_fullscreen.cxx.o
+[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_hotspot.cxx.o
+[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_iconize.cxx.o
+[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Wizard.cxx.o
+[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_XBM_Image.cxx.o
+[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_XPM_Image.cxx.o
+[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_abort.cxx.o
+[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_add_idle.cxx.o
+[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_arg.cxx.o
+[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_compose.cxx.o
+[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_display.cxx.o
+[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_get_system_colors.cxx.o
+[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_own_colormap.cxx.o
+[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_grab.cxx.o
+[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_lock.cxx.o
+[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_visual.cxx.o
+[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_absolute.cxx.o
+[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_expand.cxx.o
+[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_ext.cxx.o
+[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_isdir.cxx.o
+[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_list.cxx.o
+[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_match.cxx.o
+[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_setext.cxx.o
+[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_arc.cxx.o
+[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_ask.cxx.o
+[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_boxtype.cxx.o
+[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_color.cxx.o
+[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_contrast.cxx.o
+[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_cursor.cxx.o
+[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_curve.cxx.o
+[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_diamond_box.cxx.o
+[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_draw.cxx.o
+[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_draw_arrow.cxx.o
+[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_draw_pixmap.cxx.o
+[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_encoding_latin1.cxx.o
+[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_encoding_mac_roman.cxx.o
+[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_engraved_label.cxx.o
+[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_file_dir.cxx.o
+[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_gleam.cxx.o
+[ 77%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_font.cxx.o
+[ 77%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_gtk.cxx.o
+[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_labeltype.cxx.o
+[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_open_uri.cxx.o
+[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_oval_box.cxx.o
+[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_overlay.cxx.o
+[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_oxy.cxx.o
+[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_plastic.cxx.o
+[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_read_image.cxx.o
+[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_rect.cxx.o
+[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_round_box.cxx.o
+[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_rounded_box.cxx.o
+[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_set_font.cxx.o
+[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_scroll_area.cxx.o
+[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_shadow_box.cxx.o
+[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_shortcut.cxx.o
+[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_show_colormap.cxx.o
+[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_string_functions.cxx.o
+[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_symbols.cxx.o
+[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_utf8.cxx.o
+[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_vertex.cxx.o
+[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/print_button.cxx.o
+[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/screen_xywh.cxx.o
+[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Posix/Fl_Posix_Printer_Driver.cxx.o
+[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/X11/Fl_X11_Screen_Driver.cxx.o
+[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/X11/Fl_X11_Window_Driver.cxx.o
+[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Posix/Fl_Posix_System_Driver.cxx.o
+[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Unix/Fl_Unix_System_Driver.cxx.o
+[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Unix/Fl_Unix_Screen_Driver.cxx.o
+[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Xlib/Fl_Xlib_Copy_Surface_Driver.cxx.o
+[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Xlib/Fl_Xlib_Image_Surface_Driver.cxx.o
+[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/X11/fl_X11_platform_init.cxx.o
+[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_x.cxx.o
+[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_dnd_x.cxx.o
+[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser_FLTK.cxx.o
+[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser_GTK.cxx.o
+[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_get_key.cxx.o
+[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser_Kdialog.cxx.o
+[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser_Zenity.cxx.o
+[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Cairo/Fl_Cairo_Graphics_Driver.cxx.o
+[ 90%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Cairo/Fl_X11_Cairo_Graphics_Driver.cxx.o
+[ 90%] Building C object fltk/src/CMakeFiles/fltk.dir/flstring.c.o
+[ 90%] Building C object fltk/src/CMakeFiles/fltk.dir/numericsort.c.o
+[ 90%] Building C object fltk/src/CMakeFiles/fltk.dir/vsnprintf.c.o
+[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/is_right2left.c.o
+[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/is_spacing.c.o
+[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/case.c.o
+[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/scandir_posix.c.o
+[ 92%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/keysym2Ucs.c.o
+[ 92%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/PostScript/Fl_PostScript.cxx.o
+[ 93%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/PostScript/Fl_PostScript_image.cxx.o
+[ 93%] Linking CXX static library ../lib/libfltk.a
+[ 93%] Built target fltk
+Scanning dependencies of target fltk_forms
+[ 93%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_compatibility.cxx.o
+[ 93%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_free.cxx.o
+[ 94%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_bitmap.cxx.o
+Scanning dependencies of target fltk_images
+[ 94%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/fl_images_core.cxx.o
+[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/fl_write_png.cxx.o
+[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_BMP_Image.cxx.o
+[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_fselect.cxx.o
+[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_File_Icon2.cxx.o
+[ 96%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_GIF_Image.cxx.o
+[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_pixmap.cxx.o
+[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_timer.cxx.o
+[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_Anim_GIF_Image.cxx.o
+[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_Help_Dialog.cxx.o
+[ 98%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_ICO_Image.cxx.o
+[ 98%] Linking CXX static library ../lib/libfltk_forms.a
+[ 98%] Built target fltk_forms
+[ 98%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_JPEG_Image.cxx.o
+[ 98%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_PNG_Image.cxx.o
+[ 99%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_PNM_Image.cxx.o
+[ 99%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_Image_Reader.cxx.o
+[ 99%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_SVG_Image.cxx.o
+[100%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/nanosvg.cxx.o
+[100%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/drivers/SVG/Fl_SVG_File_Surface.cxx.o
+[100%] Linking CXX static library ../lib/libfltk_images.a
+[100%] Built target fltk_images
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libcfltk.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_box.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_browser.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_button.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_dialog.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_draw.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_enums.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_group.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_image.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_input.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_lock.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_macros.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_menu.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_misc.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_prefs.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_printer.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_surface.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_table.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_text.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_tree.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_utils.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_valuator.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_widget.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_widget.hpp
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/cfltk/cfl_window.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/cmake/cfltk/cfltkConfig.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/cmake/cfltk/cfltkConfig-debug.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/cmake/cfltk/cfltkConfigVersion.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/pkgconfig/cfltk.pc
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk_z.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/zconf.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/zlib.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/zutil.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk_png.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/png.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/pngconf.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/pnglibconf.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/pngprefix.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk_jpeg.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/jconfig.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/jerror.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/jmorecfg.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/jpeglib.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/images/fltk_jpeg_prefix.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk_forms.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/libfltk_images.a
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/fltk/FLTKConfigVersion.cmake
+-- Up-to-date: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Hold_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Graphics_Driver.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Multi_Label.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Free.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_PostScript.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/win32.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/gl2opengl.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Preferences.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Sys_Menu_Bar.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_File_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Object.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_GIF_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Fill_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Paged_Device.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Text_Display.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Roller.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Export.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_PNM_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/platform.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_draw.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_attr.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tile.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_message.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Native_File_Chooser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Pack.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Bitmap.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Double_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Plugin.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_casts.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Clock.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Hor_Fill_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/forms.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Value_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Nice_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/math.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_types.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tree_Item.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_FormsBitmap.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Group.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Value_Output.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Image_Surface.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Int_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Printer.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Hor_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_XBM_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Multiline_Output.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Scrollbar.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Shared_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Color_Chooser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Copy_Surface.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Cairo_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_ICO_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Shortcut_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Return_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Single_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Round_Clock.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/gl_draw.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Light_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/platform_types.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Gl_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Browser_.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Toggle_Round_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/mac.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Secret_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Widget_Surface.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_ask.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Check_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Table.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Repeat_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/glut.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tree.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Cairo.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_callback_macros.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Toggle_Light_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_File_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_SVG_File_Surface.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Timer.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Flex.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/filename.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_RGB_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Positioner.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_SVG_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/glu.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Multi_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_File_Icon.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Simple_Counter.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Float_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Dial.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Text_Buffer.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Rect.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/wayland.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Scheme.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Round_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Scheme_Choice.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Multiline_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_BMP_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Grid.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Adjuster.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Value_Input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_show_colormap.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_string_functions.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu_Bar.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Enumerations.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Help_View.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Select_Browser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tooltip.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Input_.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Hor_Value_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_XPM_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Terminal.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tree_Prefs.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/names.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Device.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu_Item.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Table_Row.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Radio_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tabs.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Text_Editor.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Anim_GIF_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/x.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Pixmap.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu_.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_show_input.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Counter.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_File_Chooser.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Valuator.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Wizard.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Fill_Dial.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_FormsPixmap.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Scroll.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/x11.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Choice.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Spinner.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Hor_Nice_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_utf8.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tree_Item_Array.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Menu_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Progress.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Tiled_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/gl.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Radio_Round_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Toggle_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_JPEG_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_PNG_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Slider.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Help_Dialog.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Box.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Input_Choice.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Line_Dial.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Check_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_PDF_File_Surface.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Overlay_Window.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Widget.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Chart.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Image.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Radio_Light_Button.H
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/Fl_Output.H
+-- Up-to-date: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/include/FL/fl_config.h
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/fltk/FLTK-Targets.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/fltk/FLTK-Targets-debug.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/fltk/FLTKConfig.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/fltk/FLTK-Functions.cmake
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/bin/fltk-config
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/man/man1/fltk-config.1
+-- Installing: /home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/share/man/man3/fltk.3
+cargo:root=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/build/Release
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib64
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib/Release
+cargo:rustc-link-search=native=/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/build/fltk-sys-ba18056aa3a0d6e5/out/lib64/Release
+cargo:rustc-link-lib=static=cfltk
+cargo:rustc-link-lib=static=fltk
+cargo:rustc-link-lib=static=fltk_images
+cargo:rustc-link-lib=static=fltk_png
+cargo:rustc-link-lib=static=fltk_jpeg
+cargo:rustc-link-lib=static=fltk_z
+cargo:rustc-link-lib=dylib=pthread
+cargo:rustc-link-lib=dylib=X11
+cargo:rustc-link-lib=dylib=Xext
+cargo:rustc-link-lib=dylib=Xinerama
+cargo:rustc-link-lib=dylib=Xcursor
+cargo:rustc-link-lib=dylib=Xrender
+cargo:rustc-link-lib=dylib=Xfixes
+cargo:rustc-link-lib=dylib=Xft
+cargo:rustc-link-lib=dylib=fontconfig
+cargo:rustc-link-lib=dylib=pango-1.0
+cargo:rustc-link-lib=dylib=pangoxft-1.0
+cargo:rustc-link-lib=dylib=gobject-2.0
+cargo:rustc-link-lib=dylib=cairo
+cargo:rustc-link-lib=dylib=pangocairo-1.0
+cargo:rustc-link-lib=supc++

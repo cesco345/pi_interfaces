@@ -1,0 +1,12 @@
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/libnotify-0eabff2be4d527fe.rmeta: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/inotify.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/null.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/poll.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/mod.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/timer.rs
+
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/libnotify-0eabff2be4d527fe.rlib: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/inotify.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/null.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/poll.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/mod.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/timer.rs
+
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/notify-0eabff2be4d527fe.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/inotify.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/null.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/poll.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/mod.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/timer.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/lib.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/inotify.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/null.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/poll.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/mod.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/notify-4.0.18/src/debounce/timer.rs:

@@ -1,0 +1,11 @@
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/libparse_zoneinfo-30bb52297d9d1117.rmeta: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/line.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/structure.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/table.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/libparse_zoneinfo-30bb52297d9d1117.rlib: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/line.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/structure.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/table.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/pi/rust/pi_afr/nfc_mifare_reader/target/debug/deps/parse_zoneinfo-30bb52297d9d1117.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/line.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/structure.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/table.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/lib.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/line.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/structure.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/table.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/parse-zoneinfo-0.3.1/src/transitions.rs:

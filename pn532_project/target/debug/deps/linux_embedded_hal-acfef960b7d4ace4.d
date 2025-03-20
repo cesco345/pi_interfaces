@@ -1,0 +1,11 @@
+/home/pi/rust/pi_afr/pn532_project/target/debug/deps/liblinux_embedded_hal-acfef960b7d4ace4.rmeta: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/serial.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/timer.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/sysfs_pin.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/cdev_pin.rs
+
+/home/pi/rust/pi_afr/pn532_project/target/debug/deps/liblinux_embedded_hal-acfef960b7d4ace4.rlib: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/serial.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/timer.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/sysfs_pin.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/cdev_pin.rs
+
+/home/pi/rust/pi_afr/pn532_project/target/debug/deps/linux_embedded_hal-acfef960b7d4ace4.d: /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/lib.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/serial.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/timer.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/sysfs_pin.rs /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/cdev_pin.rs
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/lib.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/serial.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/timer.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/sysfs_pin.rs:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/linux-embedded-hal-0.3.2/src/cdev_pin.rs:

@@ -1,0 +1,24 @@
+
+
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+    OpenGL_GL_PREFERENCE
+
+
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/src/cfl_prefs.cpp: In function 'Fl_Preferences* Fl_Preferences_from_path(const char*, const char*, const char*)':
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/src/cfl_prefs.cpp:25:56: warning: 'Fl_Preferences::Fl_Preferences(const char*, const char*, const char*)' is deprecated: since 1.4.0 - use Fl_Preferences(path, vendor, application, flags) instead [-Wdeprecated-declarations]
+     return new Fl_Preferences(path, vendor, application);
+                                                        ^
+In file included from /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/fltk/FL/Fl_Preferences.H:25,
+                 from /home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/src/cfl_prefs.cpp:3:
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/fltk/FL/Fl_Preferences.H:207:17: note: declared here
+                 Fl_Preferences( const char *path, const char *vendor, const char *application ) );
+                 ^~~~~~~~~~~~~~
+/home/pi/.cargo/registry/src/index.crates.io-1cd66030c949c28d/fltk-sys-1.5.4/cfltk/fltk/FL/fl_attr.h:136:54: note: in definition of macro 'FL_DEPRECATED'
+ #define FL_DEPRECATED(msg, func) [[deprecated(msg)]] func
+                                                      ^~~~
