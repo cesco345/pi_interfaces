@@ -134,3 +134,16 @@ Or try selecting the master application again:
 Then try the proper authentication command (note it's 1A, not 0A):
 
 90 1A 00 00 01 00 00
+
+
+
+++++
+
+Encrypt:
+
+openssl aes-256-cbc -a -salt -pbkdf2 -in secrets.txt -out secrets.txt.enc
+
+Decrypt:
+
+openssl aes-256-cbc -d -a -pbkdf2 -in secrets.txt.enc -out secrets.txt.new
+
