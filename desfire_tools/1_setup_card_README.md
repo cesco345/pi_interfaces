@@ -117,3 +117,20 @@ Getting application IDs (to see what applications exist on the card):
 
 90 6A 00 00 00
 This will help us understand what state the card is in and make proper adjustments to the commands.
+
++++ additional troubleshooting
+Try getting the card version again (should work regardless of authentication):
+
+90 60 00 00 00
+
+Try selecting the PICC (card) level:
+
+90 5A 00 00 00
+
+Or try selecting the master application again:
+
+90 5A 00 00 03 00 00 00 00
+
+Then try the proper authentication command (note it's 1A, not 0A):
+
+90 1A 00 00 01 00 00
