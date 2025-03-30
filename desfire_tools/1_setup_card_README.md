@@ -147,3 +147,12 @@ Decrypt:
 
 openssl aes-256-cbc -d -a -pbkdf2 -in secrets.txt.enc -out secrets.txt.new
 
+aes-256-cbc: Uses AES encryption with a 256-bit key in CBC (Cipher Block Chaining) mode
+         -a: Outputs the encrypted data in base64 encoding (ASCII armor) instead of binary
+      -salt: Adds a random salt to the password when deriving the encryption key
+    -pbkdf2: Uses PBKDF2 (Password-Based Key Derivation Function 2) to derive the encryption key from your password
+
+-in secrets.txt: The input file containing plaintext to encrypt
+-out secrets.txt.enc: The output file that will contain the encrypted data
+
+For decryption (secrets.txt.enc → secrets.txt.new):
