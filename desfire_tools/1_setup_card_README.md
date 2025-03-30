@@ -93,3 +93,27 @@ use desfire_tools::desfire_common::{
 - Fresh cards have no applications
 - Applications must be created before files can be created
 - File operations must be performed after selecting an application
+
+How to get back to a clean state:
+
+First, try to reset the session with an Abort command:
+
+90 EF 00 00 00
+
+Then try selecting the master application (AID 000000):
+
+90 5A 00 00 03 00 00 00 00
+
+If that works, then try the authentication challenge request again:
+
+90 1A 00 00 01 00 00
+If you're still getting errors, you might want to try:
+
+Getting the card version information:
+
+90 60 00 00 00
+
+Getting application IDs (to see what applications exist on the card):
+
+90 6A 00 00 00
+This will help us understand what state the card is in and make proper adjustments to the commands.
