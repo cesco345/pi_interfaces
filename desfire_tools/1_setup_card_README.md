@@ -113,6 +113,14 @@ If your card is in an unknown state, try the following sequence:
    ```
    90 1A 00 00 01 00 00
    ```
+4. Run the script on the challenge response:
+   ./desfire-auth.sh -c 5AB1FF3EE421CF84 -v
+
+5. Try again running things that needed authentication:
+   90 6A 00 00 00
+
+6. Get unique ID command:
+   90 51 00 00 00
 
 ### Diagnostic Commands
 
