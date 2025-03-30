@@ -1,0 +1,9 @@
+[package]
+name = "desfire_tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pcsc = "2.6.0"
+openssl = "0.10.48"
+chrono = "0.4"
