@@ -1,158 +1,181 @@
-# DESFire Card Setup Tool
+# DESFire Card Tools
 
-This project contains tools for working with DESFire cards, keeping the code modular and maintainable.
+A comprehensive toolkit for working with MIFARE DESFire cards, designed with modularity and maintainability in mind.
 
-## Structure
-
-- `src/desfire_common.rs` - Reusable library with common DESFire operations
-- `src/bin/setup_card.rs` - Card setup application that creates applications and files
-- `src/lib.rs` - Library exports for reuse in other projects
-
-## Setup Instructions
-
-1. Ensure your project structure is set up correctly:
+## Project Structure
 
 ```
 desfire_tools/
 ├── src/
-│   ├── desfire_common.rs
-│   ├── lib.rs
+│   ├── desfire_common.rs   # Core library with common DESFire operations
+│   ├── lib.rs              # Library exports for reuse in other projects
 │   └── bin/
-│       └── setup_card.rs
+│       └── setup_card.rs   # Card setup application for creating applications and files
 ├── Cargo.toml
 └── README.md
 ```
 
-2. Update your Cargo.toml to include the required dependencies:
+## Setup Instructions
 
-```toml
-[package]
-name = "desfire_tools"
-version = "0.1.0"
-edition = "2021"
+1. **Configure Dependencies**
 
-[dependencies]
-pcsc = "2.6"
-openssl = { version = "0.10", features = ["vendored"] }
-```
+   Update your `Cargo.toml` to include the required dependencies:
+
+   ```toml
+   [package]
+   name = "desfire_tools"
+   version = "0.1.0"
+   edition = "2021"
+
+   [dependencies]
+   pcsc = "2.6"
+   openssl = { version = "0.10", features = ["vendored"] }
+   ```
+
+2. **Build the Project**
+
+   ```bash
+   cargo build
+   ```
 
 ## Using the Tools
 
-### Setting Up a Card
+### Card Setup Tool
 
-1. Run the card setup tool:
+The setup tool allows you to initialize and configure DESFire cards:
 
-```
+```bash
 cargo run --bin setup_card
 ```
 
-2. The tool will:
-   - Connect to your card reader
-   - Authenticate with the master key (default: all zeros)
-   - Give you options to:
-     - Create a new application
-     - List existing applications
-     - Exit
+#### Features:
 
-3. When creating a new application:
-   - You'll be prompted for an Application ID (6 hex digits)
-   - Choose the number of keys for the application
-   - A standard file will be created in the application
-   - Sample data will be written to the file and read back
+- Connects to your card reader automatically
+- Authenticates with the master key (default: all zeros)
+- Provides options to:
+  - Create new applications
+  - List existing applications
+  - Format card
+  - Create and manage files within applications
+
+#### Creating a New Application:
+
+1. Select "Create application" from the menu
+2. Enter an Application ID (6 hex digits)
+3. Choose the number of keys for the application
+4. Specify file creation options
+5. Sample data will be written to verify functionality
 
 ### Extending the Library
 
-To create your own DESFire tools:
-
-1. Import the common functions:
+To create your own custom DESFire tools:
 
 ```rust
 use desfire_tools::desfire_common::{
     connect_to_card, authenticate_des, send_apdu, HexSlice
 };
-```
 
-2. Use these building blocks to implement your specific functionality
+// Your implementation here
+```
 
 ## Common DESFire Commands
 
-- `0x90 0x0A` - Authenticate with DES
-- `0x90 0x1A` - Authenticate with 3DES
-- `0x90 0xAA` - Authenticate with AES
-- `0x90 0x6A` - Get application IDs
-- `0x90 0x5A` - Select application
-- `0x90 0xCA` - Create application
-- `0x90 0xDA` - Delete application
-- `0x90 0xCD` - Create standard file
-- `0x90 0x3D` - Write data
-- `0x90 0xBD` - Read data
+| Command | Description |
+|---------|-------------|
+| `90 0A` | Authenticate with DES |
+| `90 1A` | Authenticate with 3DES |
+| `90 AA` | Authenticate with AES |
+| `90 6A` | Get application IDs |
+| `90 5A` | Select application |
+| `90 CA` | Create application |
+| `90 DA` | Delete application |
+| `90 CD` | Create standard file |
+| `90 3D` | Write data |
+| `90 BD` | Read data |
+
+## Troubleshooting
+
+### Resetting Card State
+
+If your card is in an unknown state, try the following sequence:
+
+1. Reset the session:
+   ```
+   90 EF 00 00 00
+   ```
+
+2. Select the master application:
+   ```
+   90 5A 00 00 03 00 00 00 00
+   ```
+
+3. Request authentication:
+   ```
+   90 1A 00 00 01 00 00
+   ```
+
+### Diagnostic Commands
+
+To understand the current state of your card:
+
+- Get card version (works without authentication):
+  ```
+  90 60 00 00 00
+  ```
+
+- Get application IDs (requires authentication):
+  ```
+  90 6A 00 00 00
+  ```
+
+- Select PICC level:
+  ```
+  90 5A 00 00 00
+  ```
+
+## Cryptographic Operations
+
+### Command Reference
+
+**Encrypt a file with AES-256:**
+```bash
+openssl aes-256-cbc -a -salt -pbkdf2 -in secrets.txt -out secrets.txt.enc
+```
+
+**Decrypt an encrypted file:**
+```bash
+openssl aes-256-cbc -d -a -pbkdf2 -in secrets.txt.enc -out secrets.txt.new
+```
+
+### Parameters Explained
+
+| Parameter | Description |
+|-----------|-------------|
+| `aes-256-cbc` | AES encryption with 256-bit key in CBC mode |
+| `-a` | Output in base64 encoding (ASCII armor) |
+| `-salt` | Add random salt when deriving encryption key |
+| `-pbkdf2` | Use PBKDF2 for key derivation from password |
+| `-in <file>` | Input file path |
+| `-out <file>` | Output file path |
+| `-d` | Decrypt mode (for decryption only) |
 
 ## Notes
 
 - Default master key is all zeros: `00 00 00 00 00 00 00 00`
 - Fresh cards have no applications
-- Applications must be created before files can be created
-- File operations must be performed after selecting an application
+- Applications must be created before files
+- File operations require selecting an application first
+- Authentication is required for most operations
 
-How to get back to a clean state:
+## DESFire Authentication Process
 
-First, try to reset the session with an Abort command:
+The authentication process follows these steps:
 
-90 EF 00 00 00
+1. Select application
+2. Request authentication challenge
+3. Decrypt challenge with appropriate key
+4. Process challenge according to protocol
+5. Send response to card
+6. Verify card's response
 
-Then try selecting the master application (AID 000000):
-
-90 5A 00 00 03 00 00 00 00
-
-If that works, then try the authentication challenge request again:
-
-90 1A 00 00 01 00 00
-If you're still getting errors, you might want to try:
-
-Getting the card version information:
-
-90 60 00 00 00
-
-Getting application IDs (to see what applications exist on the card):
-
-90 6A 00 00 00
-This will help us understand what state the card is in and make proper adjustments to the commands.
-
-+++ additional troubleshooting
-Try getting the card version again (should work regardless of authentication):
-
-90 60 00 00 00
-
-Try selecting the PICC (card) level:
-
-90 5A 00 00 00
-
-Or try selecting the master application again:
-
-90 5A 00 00 03 00 00 00 00
-
-Then try the proper authentication command (note it's 1A, not 0A):
-
-90 1A 00 00 01 00 00
-
-
-
-++++
-
-Encrypt:
-
-openssl aes-256-cbc -a -salt -pbkdf2 -in secrets.txt -out secrets.txt.enc
-
-Decrypt:
-
-openssl aes-256-cbc -d -a -pbkdf2 -in secrets.txt.enc -out secrets.txt.new
-
-aes-256-cbc: Uses AES encryption with a 256-bit key in CBC (Cipher Block Chaining) mode
-         -a: Outputs the encrypted data in base64 encoding (ASCII armor) instead of binary
-      -salt: Adds a random salt to the password when deriving the encryption key
-    -pbkdf2: Uses PBKDF2 (Password-Based Key Derivation Function 2) to derive the encryption key from your password
-
--in secrets.txt: The input file containing plaintext to encrypt
--out secrets.txt.enc: The output file that will contain the encrypted data
-
-For decryption (secrets.txt.enc → secrets.txt.new):
+For detailed examples of authentication, see the included authentication script.
