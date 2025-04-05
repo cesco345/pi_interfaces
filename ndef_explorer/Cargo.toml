@@ -1,0 +1,21 @@
+[package]
+name = "ndef_explorer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Francesco Piscani <stemapks@gmail.com>"]
+description = "A tool for exploring NDEF functionality in NFC cards"
+
+[lib]
+name = "ndef_explorer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ndef_explorer"
+path = "src/main.rs"
+
+[dependencies]
+pcsc = "2.8.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
+regex = "1.5"
