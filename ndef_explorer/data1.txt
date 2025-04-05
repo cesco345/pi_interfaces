@@ -1,0 +1,9 @@
+{
+  "id": "card_1743834281810",
+  "name": "Card 00:02:05:00:01:00:01:00",
+  "applicationId": 1,
+  "fileId": 1,
+  "fileData": "Hello beautiful 😄",
+  "format": "desfire_ndef",
+  "exportDate": "2025-04-05T14:52:00.875Z"
+}

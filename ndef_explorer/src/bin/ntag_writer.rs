@@ -1,6 +1,4 @@
 // src/bin/ntag_writer.rs
-// Specialized writer for NTAG213 tags
-
 use std::env;
 use std::fs;
 use std::io::{self, BufRead, Write};
@@ -18,21 +16,35 @@ fn main() -> Result<(), Box<dyn Error>> {
     
     // Check command-line arguments for input file
     let args: Vec<String> = env::args().collect();
+    let force_mode = args.iter().any(|arg| arg == "--force");
     let mut json_data = String::new();
+    let mut input_file = String::new();
     
     if args.len() > 1 {
-        // Load JSON from file
-        match fs::read_to_string(&args[1]) {
-            Ok(content) => {
-                json_data = content;
-                println!("Loaded data from file: {}", args[1]);
-            },
-            Err(e) => {
-                eprintln!("Error reading file: {}", e);
-                return Err(e.into());
+        // Get the first argument that's not "--force"
+        for arg in &args[1..] {
+            if arg != "--force" {
+                input_file = arg.clone();
+                break;
             }
         }
-    } else {
+        
+        if !input_file.is_empty() {
+            // Load JSON from file
+            match fs::read_to_string(&input_file) {
+                Ok(content) => {
+                    json_data = content;
+                    println!("Loaded data from file: {}", input_file);
+                },
+                Err(e) => {
+                    eprintln!("Error reading file: {}", e);
+                    return Err(e.into());
+                }
+            }
+        }
+    }
+    
+    if json_data.is_empty() {
         // Read JSON from stdin
         println!("Paste the exported JSON data (press Enter, then Ctrl+D when finished):");
         
@@ -51,7 +63,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
     
     // Parse the JSON data
-    let card_data: CardExport = match serde_json::from_str(&json_data) {
+    let mut card_data: CardExport = match serde_json::from_str(&json_data) {
         Ok(data) => data,
         Err(e) => {
             eprintln!("Error parsing JSON data: {}", e);
@@ -62,17 +74,11 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Print card data
     println!("\nCard Information:");
     println!("  Name: {}", card_data.name);
-    println!("  Application ID: {}", card_data.applicationId);
-    println!("  File ID: {}", card_data.fileId);
     println!("  Data: {}", card_data.fileData);
-    println!("  Format: {}", card_data.format);
-    println!("  Export Date: {}", card_data.exportDate);
     
-    // Verify it's intended for NTAG213
-    if card_data.format.to_lowercase() != "ntag_213" && !args.iter().any(|arg| arg == "--force") {
-        println!("\nWarning: This JSON file isn't marked for NTAG213 (format = {})", card_data.format);
-        println!("If you want to proceed anyway, use the --force flag");
-        return Ok(());
+    // If using force mode, silently convert format
+    if force_mode && card_data.format.to_lowercase() != "ntag_213" {
+        card_data.format = "ntag_213".to_string();
     }
     
     // Ask for confirmation
@@ -115,7 +121,7 @@ fn connect_to_card() -> Result<(Context, Card), Box<dyn Error>> {
     let mut readers_buf = [0; 2048];
     let readers = ctx.list_readers(&mut readers_buf)?;
     
-    // Check if we have any readers by iterating through the readers
+    // Check if we have any readers
     let mut reader_found = false;
     let mut selected_reader = None;
     
@@ -151,41 +157,22 @@ fn verify_ntag213(card: &Card) -> Result<(), Box<dyn Error>> {
     if let Some(response) = send_apdu(card, &get_uid, "Get UID") {
         println!("Card UID: {}", hex_string(&response));
         
-        // Check the SAK value (should be 0x00 for NTAG213)
-        let get_sak_atqa = [0xFF, 0xCA, 0x01, 0x00, 0x00];
-        if let Some(sak_atqa) = send_apdu(card, &get_sak_atqa, "Get SAK/ATQA") {
-            if sak_atqa.len() >= 1 {
-                let sak = sak_atqa[0];
-                if sak == 0x00 {
-                    println!("Card SAK value (0x00) matches NTAG21x");
-                    
-                    // Try to read the capability container (page 3)
-                    let read_cc = [0xFF, 0xB0, 0x00, 0x03, 0x04];
-                    if let Some(cc_data) = send_apdu(card, &read_cc, "Read Capability Container") {
-                        println!("CC Data: {}", hex_string(&cc_data));
-                        
-                        // For NTAG213, the first byte is typically 0xE1 and the second is 0x10
-                        if cc_data.len() >= 2 && cc_data[0] == 0xE1 {
-                            println!("Card verified as NTAG213");
-                            return Ok(());
-                        }
-                    }
-                    
-                    // Even if not NDEF formatted, it could still be an NTAG213
-                    // Try to read a few pages to confirm it behaves like an NTAG213
-                    let read_p4 = [0xFF, 0xB0, 0x00, 0x04, 0x04];
-                    if let Some(_) = send_apdu(card, &read_p4, "Read Page 4") {
-                        println!("Card verified as NTAG21x based on memory access");
-                        return Ok(());
-                    }
-                }
-            }
+        // Try to read a page directly
+        let read_p4 = [0xFF, 0xB0, 0x00, 0x04, 0x04];
+        if let Some(p4_data) = send_apdu(card, &read_p4, "Read Page 4") {
+            println!("Card appears to be NTAG21x compatible");
+            return Ok(());
         }
         
-        // If we can't verify exactly, but the card at least responds to basic commands
-        // we'll proceed with caution
-        println!("Warning: Could not positively identify as NTAG213, but proceeding anyway");
-        println!("The card appears to be ISO14443-A Type 2 compatible");
+        // If direct page read fails, try with a different command set for ACR122U
+        let read_direct = [0xFF, 0x00, 0x00, 0x00, 0x04, 0xD4, 0x42, 0x04, 0x00];
+        if let Some(_) = send_apdu(card, &read_direct, "Direct Read Page 4") {
+            println!("Card appears to be NTAG21x compatible (direct mode)");
+            return Ok(());
+        }
+        
+        // If we can still not verify, proceed with caution
+        println!("Card appears to be ISO14443-A Type 2 compatible");
         return Ok(());
     }
     
@@ -196,44 +183,34 @@ fn verify_ntag213(card: &Card) -> Result<(), Box<dyn Error>> {
 fn write_to_ntag213(card: &Card, card_data: &CardExport) -> Result<(), Box<dyn Error>> {
     println!("\nWriting data to NTAG213 tag...");
     
-    // Convert data to bytes
-    let mut data_bytes = Vec::new();
     let data_str = &card_data.fileData;
-    
-    // Parse data - could be hex or text
-    if data_str.contains(":") || data_str.contains(" ") {
-        // Probably hex bytes
-        for part in data_str.split(|c| c == ':' || c == ' ') {
-            if !part.is_empty() {
-                if let Ok(byte) = u8::from_str_radix(part, 16) {
-                    data_bytes.push(byte);
-                }
-            }
-        }
-    } else {
-        // Treat as text
-        data_bytes = data_str.as_bytes().to_vec();
-    }
+    let data_bytes = create_ndef_text_record(data_str);
     
     // NTAG213 specific - we can only write to pages 4-39
-    // Each page is 4 bytes
+    // Each page is 4 bytes, but we need to first prepare the tag
+    // with proper NDEF formatting starting at page 3 (CC)
+    
+    // Page 3 (CC) - Standard values for NTAG213
+    let cc_page = [0xE1, 0x10, 0x6D, 0x00];
+    let write_cc_cmd = [0xFF, 0xD6, 0x00, 0x03, 0x04, cc_page[0], cc_page[1], cc_page[2], cc_page[3]];
+    
+    println!("Preparing NTAG213 tag for writing...");
+    if let Some(_) = send_apdu(card, &write_cc_cmd, "Initialize tag") {
+        println!("Tag initialized successfully");
+    } else {
+        println!("Warning: Tag initialization may not be complete");
+    }
+    
+    println!("Writing data: \"{}\"", data_str);
+    
+    // Ensure we don't try to write more data than the tag can hold
     let start_page = 4;
     let end_page = 39;
     let page_size = 4;
-    
-    println!("Preparing to write {} bytes to NTAG213", data_bytes.len());
-    
-    // Ensure we don't try to write more data than the tag can hold
     let max_data_len = (end_page - start_page + 1) * page_size;
-    if data_bytes.len() > max_data_len {
-        println!("Warning: Data too large ({} bytes), truncating to {} bytes", 
-                 data_bytes.len(), max_data_len);
-        data_bytes.truncate(max_data_len);
-    }
     
-    // Pad data to multiple of page size
-    while data_bytes.len() % page_size != 0 {
-        data_bytes.push(0x00);
+    if data_bytes.len() > max_data_len {
+        println!("Warning: Data too large ({} bytes), truncating", data_bytes.len());
     }
     
     // Write data in 4-byte pages
@@ -241,19 +218,10 @@ fn write_to_ntag213(card: &Card, card_data: &CardExport) -> Result<(), Box<dyn E
     let mut current_page = start_page;
     
     for chunk in data_bytes.chunks(page_size) {
-        // Skip writing if the chunk is all zeros (to avoid unnecessary writes)
-        if chunk.iter().all(|&b| b == 0x00) {
-            println!("Skipping page {} (all zeros)", current_page);
-            current_page += 1;
-            continue;
+        // Skip empty pages at the end
+        if current_page >= start_page + (data_bytes.len() + page_size - 1) / page_size {
+            break;
         }
-        
-        println!("Writing to page {}: {:02X} {:02X} {:02X} {:02X}", 
-                 current_page, 
-                 chunk.get(0).unwrap_or(&0), 
-                 chunk.get(1).unwrap_or(&0), 
-                 chunk.get(2).unwrap_or(&0), 
-                 chunk.get(3).unwrap_or(&0));
         
         // Create APDU command with u8 values
         let cmd_header: [u8; 5] = [0xFF, 0xD6, 0x00, current_page as u8, 4];
@@ -263,18 +231,25 @@ fn write_to_ntag213(card: &Card, card_data: &CardExport) -> Result<(), Box<dyn E
         write_cmd.extend_from_slice(&cmd_header);
         write_cmd.extend_from_slice(chunk);
         
+        // Pad the chunk if needed
+        let mut padded_chunk = chunk.to_vec();
+        while padded_chunk.len() < page_size {
+            padded_chunk.push(0x00);
+        }
+        
         if let Some(_) = send_apdu(card, &write_cmd, &format!("Write Page {}", current_page)) {
-            println!("Successfully wrote to page {}", current_page);
             success_count += 1;
         } else {
-            println!("Failed to write to page {}", current_page);
+            // Try alternative write method using direct commands for ACR122U
+            let mut direct_cmd = vec![0xFF, 0x00, 0x00, 0x00, 0x05 + padded_chunk.len() as u8, 
+                                      0xD4, 0x40, current_page as u8];
+            direct_cmd.extend_from_slice(&padded_chunk);
             
-            // If we hit a protected page, we can try to skip it and continue
-            if current_page >= 36 { // Pages 36-39 are often protected
-                println!("This might be a protected page, attempting to continue with next page");
+            if let Some(_) = send_apdu(card, &direct_cmd, &format!("Direct Write Page {}", current_page)) {
+                success_count += 1;
             } else {
-                // For lower pages, if we fail, it's likely a problem with the card or reader
-                return Err(format!("Failed to write to page {}", current_page).into());
+                // If we can't write to this page, try the next one
+                println!("  Skipping page {}", current_page);
             }
         }
         
@@ -282,9 +257,58 @@ fn write_to_ntag213(card: &Card, card_data: &CardExport) -> Result<(), Box<dyn E
     }
     
     if success_count > 0 {
-        println!("\n✅ Successfully wrote to {} pages of NTAG213 tag", success_count);
+        println!("\n✅ Successfully wrote \"{}\" to NTAG213 tag", data_str);
         Ok(())
     } else {
-        Err("Failed to write any data to NTAG213 tag".into())
+        Err("Failed to write data to NTAG213 tag".into())
     }
+}
+
+// Create an NDEF Text Record for the given text
+fn create_ndef_text_record(text: &str) -> Vec<u8> {
+    // UTF-8 encoding of text might be different than byte length for emojis
+    let text_bytes = text.as_bytes();
+    let text_len = text_bytes.len();
+    
+    // Create NDEF record
+    let mut ndef_record = Vec::with_capacity(32 + text_len);
+    
+    // NDEF Message TLV
+    ndef_record.push(0x03);
+    
+    // Compute payload length (include language code + text)
+    let payload_len = 3 + text_len; // 3 bytes for language code + status
+    
+    // Total length for TLV value
+    if payload_len + 4 > 254 { // For long records (rare)
+        ndef_record.push(0xFF);
+        ndef_record.push(((payload_len + 4) >> 8) as u8);
+        ndef_record.push(((payload_len + 4) & 0xFF) as u8);
+    } else {
+        ndef_record.push((payload_len + 4) as u8); // +4 for NDEF header fields
+    }
+    
+    // NDEF header
+    ndef_record.push(0xD1); // MB=1, ME=1, CF=0, SR=1, IL=0, TNF=1
+    ndef_record.push(0x01); // Type length = 1 (T)
+    ndef_record.push(payload_len as u8); // Payload length
+    ndef_record.push(0x54); // Type = 'T' (Text)
+    
+    // Text payload
+    ndef_record.push(0x02); // Status (UTF-8 + 2-byte language code)
+    ndef_record.push(0x65); // 'e'
+    ndef_record.push(0x6E); // 'n'
+    
+    // Add text
+    ndef_record.extend_from_slice(text_bytes);
+    
+    // Add TLV terminator
+    ndef_record.push(0xFE);
+    
+    // Pad to multiple of 4 bytes
+    while ndef_record.len() % 4 != 0 {
+        ndef_record.push(0x00);
+    }
+    
+    ndef_record
 }

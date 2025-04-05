@@ -13,6 +13,8 @@ This project combines a React Native mobile application (DESFire Emulator) with 
   - [MIFARE Classic](#mifare-classic)
   - [MIFARE DESFire](#mifare-desfire)
   - [MIFARE Ultralight](#mifare-ultralight)
+- [COVID-19 Test Result Writer](#covid-19-test-result-writer)
+- [Transferring Files from Android to Raspberry Pi](#transferring-files-from-android-to-raspberry-pi)
 - [Using Mobile Apps as Helpers](#using-mobile-apps-as-helpers)
   - [NXP Tag Info](#nxp-tag-info)
   - [NXP Tag Writer](#nxp-tag-writer)
@@ -141,21 +143,41 @@ cargo run --bin read_ntag
 
 #### Writing to an NTAG
 
-1. **Create a JSON file for the tag data**:
-   ```bash
-   # Create manually or use the clone_ntag tool on an existing tag
-   cargo run --bin clone_ntag data.txt
-   ```
+There are two main methods for writing to NTAG213/215/216 cards:
 
-2. **Write the data to a new tag**:
+1. **Cloning from memory dump**:
    ```bash
+   # Create a clone file from a tag memory dump (e.g., from NXP TagInfo)
+   cargo run --bin clone_ntag taginfo.txt
+   
+   # Write the cloned data to a new tag
    cargo run --bin ntag_writer ntag213_clone.json
    ```
 
-3. **For formatting issues, add the --force flag**:
+2. **Direct writing from JSON data file** (Recommended):
    ```bash
-   cargo run --bin ntag_writer ntag213_clone.json --force
+   # Write data directly from a JSON file exported from the mobile app
+   cargo run --bin ntag_writer data.txt --force
    ```
+
+The second method is particularly useful when transferring data from your mobile app emulator. The `--force` flag ensures compatibility when importing from different format types (like DESFire NDEF to NTAG).
+
+#### JSON Format for NTAG Writing
+
+The JSON file should contain data in this format:
+```json
+{
+  "id": "card_1743832619319",
+  "name": "Card 00:04:00:00:09:00:01:02:00:02:01:00:09:00",
+  "applicationId": 1,
+  "fileId": 1,
+  "fileData": "Hello beautiful ❤️",
+  "format": "desfire_ndef",
+  "exportDate": "2025-04-05T05:57:36.852Z"
+}
+```
+
+The `ntag_writer` with `--force` flag will intelligently convert this format to work with NTAG213 cards, handling text data including emojis.
 
 ### MIFARE Classic
 
@@ -210,6 +232,134 @@ MIFARE Ultralight is a low-cost, NFC Forum Type 2 compliant tag similar to NTAG 
 # Ultralight tags can often be written using the card_writer
 cargo run --bin card_writer ultralight_data.json
 ```
+
+## COVID-19 Test Result Writer
+
+This specialized tool allows you to encode COVID-19 test results onto NTAG213 tags for use with the COVID-19 Test Reader in the mobile application.
+
+### Features
+
+- Creates minimal-size JSON data that fits within NTAG213's 144-byte capacity
+- Stores essential test information (result, timestamps, lot number)
+- Tracks both test result validity and physical test kit expiration
+- Formats data in NDEF Text Record format for compatibility with NFC-enabled devices
+
+### Data Format
+
+The COVID test writer uses a compact data format with the following fields:
+- `res`: Test result as a single character ("p" for positive, "n" for negative, "i" for invalid)
+- `ts`: Unix timestamp of when the test was performed
+- `exp`: Unix timestamp of when the test result expires
+- `lot`: Lot number of the physical test
+- `mfg`: Unix timestamp of the test kit's manufacturing date
+- `shf`: Shelf life of the test kit in months
+
+### Usage
+
+```bash
+# Run the COVID test writer
+cargo run --bin covid_test_writer
+```
+
+The tool will:
+1. Generate a test result with the current timestamp
+2. Show if the data will fit on an NTAG213 tag
+3. Display human-readable information about the test
+4. Prompt to write the data to a tag
+
+### Customizing Test Data
+
+You can modify the `create_compact_test_result` function to:
+- Change the test result ("p", "n", or "i")
+- Set different manufacturing dates
+- Adjust shelf life in months
+- Modify test validity period (default is 72 hours)
+- Change the lot number
+
+### Reading COVID Test Tags
+
+To read a COVID test tag you've created:
+1. Open the DESFire Emulator app on your Android device
+2. Tap the "COVID-19 Test Reader" button
+3. Place your phone near the tag
+
+The app will display:
+- Test result (Positive/Negative/Invalid)
+- Test date and expiration
+- Manufacturing date and kit expiration date
+- Lot number
+- Validity status of both the test result and the physical kit
+
+### Compatibility Notes
+
+- The COVID test data is optimized to fit within the 144-byte limit of NTAG213 tags
+- For larger data sets (more fields), consider using NTAG215 (504 bytes) or NTAG216 (888 bytes)
+- The mobile app can automatically parse and expand the minimal data format
+
+## Transferring Files from Android to Raspberry Pi
+
+To transfer export files from your Android device to your Raspberry Pi for tag writing, you can use Termux with SCP. This is useful when you've created card data on your mobile emulator app and want to write it to physical tags.
+
+### Setup Termux for File Transfer
+
+1. **Install Termux on your Android device** from the Google Play Store or F-Droid
+
+2. **Install required packages in Termux**:
+   ```bash
+   pkg update
+   pkg install openssh
+   ```
+
+3. **Configure password-less SSH (optional but recommended)**:
+   ```bash
+   # Generate SSH key
+   ssh-keygen -t rsa
+   
+   # Copy your key to the Raspberry Pi
+   # (You'll need to enter your Pi's password)
+   ssh-copy-id pi@raspberry_pi_ip_address
+   ```
+
+### Transfer Files from Android to Raspberry Pi
+
+1. **Export your card data from the emulator app** (this creates a data.txt file in your app's storage)
+
+2. **In Termux, navigate to the file location**:
+   ```bash
+   # You might need to grant Termux storage permission first
+   termux-setup-storage
+   
+   # Navigate to your app's files
+   cd ~/storage/shared/Android/data/com.stemapks.desfiremulator/files
+   # or wherever your app stores exported files
+   ```
+
+3. **Transfer the file to your Raspberry Pi**:
+   ```bash
+   scp data.txt pi@raspberry_pi_ip_address:~/rust/pi_afr/ndef_explorer/
+   ```
+
+4. **On your Raspberry Pi, write the data to a tag**:
+   ```bash
+   cd ~/rust/pi_afr/ndef_explorer
+   cargo run --bin ntag_writer data.txt --force
+   ```
+
+### Alternative File Transfer Methods
+
+If SCP is not available, you can use other methods:
+
+- **Android File Transfer apps** like Solid Explorer or FX File Explorer with SFTP plugin
+- **HTTP transfer** using a simple HTTP server:
+  ```bash
+  # On Raspberry Pi
+  python3 -m http.server 8000
+  
+  # Then upload from your Android browser
+  # http://raspberry_pi_ip_address:8000
+  ```
+- **USB drive transfer**: Copy to a USB drive from your Android device, then plug into Raspberry Pi
+- **Email or cloud storage** (Google Drive, Dropbox, etc.)
 
 ## Using Mobile Apps as Helpers
 
@@ -281,11 +431,78 @@ NXP Tag Writer helps with formatting and writing standardized NDEF content:
    - Check if the card is write-protected
    - For MIFARE Classic, ensure you have the correct authentication keys
    - For protected sectors, use the --force flag when applicable
+- With NTAG213 writing, make sure to use the --force flag when importing from different format types
+   - For COVID test writer, ensure the card is properly placed and wait for the beep before pressing Enter
 
 4. **Card Type Detection Issues**:
    - Use NXP Tag Info to confirm the exact card type
    - Try different card positioning on the reader
    - Some counterfeit cards may not correctly identify themselves
+
+5. **Emoji and Special Character Issues**:
+   - When writing text with emojis, make sure to use the improved ntag_writer with --force flag
+   - If emojis are corrupted, check that your JSON file uses UTF-8 encoding
+
+6. **File Transfer Problems**:
+   - Verify network connectivity between your Android device and Raspberry Pi
+   - Check that SSH or SCP services are running on the Raspberry Pi
+   - Try alternative transfer methods if SCP fails
+
+7. **COVID Test Writer Timing Issues**:
+   - If you encounter "NoSmartcard" errors, make sure to place the card firmly on the reader
+   - Try adding a small delay (300-500ms) between card placement and initialization
+   - For more reliable detection, press the card firmly against the reader when the LED is solid
+
+## COVID Test Integration with Mobile App
+
+### Setting Up the Test Reader
+
+1. Add the COVID-19 Test Reader button to your React Native app:
+   ```jsx
+   {/* COVID-19 Test Reader Button - Added below the main reading button */}
+   <TouchableOpacity
+     style={[
+       commonStyles.button,
+       styles.covidButton,
+       isEmulating ? commonStyles.buttonDisabled : null,
+     ]}
+     onPress={() => router.push('/test-result')}
+     disabled={isEmulating}
+   >
+     <Text style={commonStyles.buttonText}>
+       COVID-19 Test Reader
+     </Text>
+   </TouchableOpacity>
+   ```
+
+2. Create a TestResultScreen.js component in your app that can:
+   - Parse the minimalist data format from the tags
+   - Expand it into a full display format
+   - Show clear visual indicators for test validity
+
+3. Connect your mobile app to the NTAG213 tags by:
+   - Using the useTagReader hook to detect NFC tags
+   - Extracting the JSON data from the NDEF Text Record
+   - Processing both the test result and the physical kit expiration dates
+
+### Tag Data Structure and Size Considerations
+
+When working with NTAG213 tags for COVID test data:
+
+1. Keep your JSON payload minimal:
+   - Use short field names (e.g., "res" instead of "result")
+   - Use single characters for result codes when possible
+   - Use Unix timestamps to save space over full date strings
+
+2. Understand size limitations:
+   - NTAG213: 144 bytes total (including NDEF overhead)
+   - NDEF overhead: ~10-16 bytes
+   - Keep your actual JSON data under 130 bytes for reliable writing
+
+3. Make size vs. feature tradeoffs:
+   - If you need more data fields, consider NTAG215 tags
+   - Focus on essential information that users need immediately
+   - Move less critical data to the mobile app's expanded display
 
 ## Additional Resources
 
@@ -293,6 +510,9 @@ NXP Tag Writer helps with formatting and writing standardized NDEF content:
 - [NFC Forum Type 2 Tag Operation Specification](https://nfc-forum.org/build/specifications/)
 - [NDEF Message Formatting Guide](https://developer.android.com/reference/android/nfc/NdefMessage)
 - [DESFire EV1 Application Programming Guide](https://www.nxp.com/docs/en/application-note/AN10787.pdf)
+- [Termux Wiki](https://wiki.termux.com/wiki/Main_Page) - For Android command-line usage
+- [NDEF Message Format Documentation](https://learn.adafruit.com/adafruit-pn532-rfid-nfc/ndef)
+- [NTAG213/215/216 Product Data Sheet](https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf)
 
 ---
 
@@ -300,47 +520,47 @@ This project combines mobile and Raspberry Pi technologies to provide a comprehe
 
 ## Extra Notes
 
-# NFC Card Tools
+### NFC Card Tools
 
 A collection of Rust tools for working with various NFC card types.
 
-## Overview
+#### Overview
 
 This toolkit provides command-line utilities for reading, writing, and formatting different types of NFC cards, including MIFARE Classic, DESFire, and other NDEF-compatible cards.
 
-## Card Type Operations
+#### Card Type Operations
 
-### MIFARE Classic Cards
+##### MIFARE Classic Cards
 
-#### Reading
+###### Reading
 ```bash
 cargo run --bin mifare_reader
 ```
 This reads MIFARE Classic cards, showing sector data and interpreting NDEF messages if present.
 
-#### Writing
+###### Writing
 ```bash
 cargo run --bin mifare_writer data1.json
 ```
 Writes data from the specified JSON file to a MIFARE Classic card. It automatically tries different authentication keys and writes to the appropriate sectors.
 
-#### NDEF Formatting
+###### NDEF Formatting
 ```bash
 cargo run --bin mifare_ndef_formatter data1.json
 ```
 Formats a MIFARE Classic card for NDEF compatibility, configuring MAD sectors and writing proper NDEF structures.
 
-### DESFire Cards
+##### DESFire Cards
 
-#### Writing
+###### Writing
 ```bash
 cargo run --bin card_writer data1.json
 ```
 This detects the card type and if it's a DESFire, it will show DESFire setup instructions and optionally attempt automatic setup.
 
-### Generic NDEF Operations
+##### Generic NDEF Operations
 
-#### Reading
+###### Reading
 ```bash
 cargo run --bin focused_ndef_reader
 ```
@@ -354,29 +574,35 @@ An interactive NDEF explorer that handles multiple card types and provides a men
 - Send Raw Commands
 - Import Card Data for Writing
 
-#### Writing to Type 2 Tags (NTAG, MIFARE Ultralight)
+###### Writing to Type 2 Tags (NTAG, MIFARE Ultralight)
 The `card_writer` can handle Type 2 tags by detecting them and using the appropriate writing method:
 ```bash
 cargo run --bin card_writer data1.json
 ```
 
-#### Writing to Type 4 Tags (like DESFire)
+###### Writing to Type 4 Tags (like DESFire)
 Also handled by `card_writer` with dedicated operations for Type 4 tags:
 ```bash
 cargo run --bin card_writer data1.json
 ```
 
-### Other Useful Commands
+#### Other Useful Commands
 
-#### Sending Raw Commands
+##### Sending Raw Commands
 ```bash
 cargo run --bin raw_command
 ```
 Allows you to send custom APDU commands to any card type for advanced operations or troubleshooting.
 
-## Step-by-Step Process for Each Card Type
+##### COVID Test Writing
+```bash
+cargo run --bin covid_test_writer
+```
+Specialized tool for writing COVID-19 test results to NTAG213 tags with minimal data format.
 
-### MIFARE Classic
+#### Step-by-Step Process for Each Card Type
+
+##### MIFARE Classic
 1. **Read the card first to identify it:**
    ```bash
    cargo run --bin mifare_reader
@@ -397,7 +623,7 @@ Allows you to send custom APDU commands to any card type for advanced operations
    cargo run --bin mifare_reader
    ```
 
-### DESFire Cards
+##### DESFire Cards
 1. **Read the card first:**
    ```bash
    cargo run --bin focused_ndef_reader
@@ -417,7 +643,7 @@ Allows you to send custom APDU commands to any card type for advanced operations
    ```
    (Then select option 4 to read NDEF message)
 
-### MIFARE Ultralight/NTAG (Type 2 Tags)
+##### MIFARE Ultralight/NTAG (Type 2 Tags)
 1. **Read the card:**
    ```bash
    cargo run --bin focused_ndef_reader
@@ -434,42 +660,36 @@ Allows you to send custom APDU commands to any card type for advanced operations
    cargo run --bin focused_ndef_reader
    ```
 
-## JSON Data Format
+##### COVID Test Tags
+1. **Generate and write test data:**
+   ```bash
+   cargo run --bin covid_test_writer
+   ```
+
+2. **Read with the mobile app:**
+   - Open the DESFire Emulator app
+   - Use the COVID-19 Test Reader
+   - Hold the tag against your phone
+
+#### JSON Data Format
 
 The JSON files used for writing should contain data in the CardExport format:
 
 ```json
 {
+  "id": "card_1743832619319",
   "name": "Card 07:09:00:00:03:00:00:02",
   "applicationId": 1,
   "fileId": 1,
   "fileData": "Hello World",
+  "format": "ntag_213",
   "exportDate": "2025-04-04T18:55:52.938Z"
 }
 ```
 
-## Troubleshooting
+For cross-format compatibility (e.g., writing DESFire NDEF data to NTAG213), use the `--force` flag with the appropriate writer tool.
 
-If you encounter issues with card reading or writing:
-
-1. Try using the `raw_command` tool to send direct APDU commands
-2. Check that you're using the correct card type for the intended operation
-3. For MIFARE Classic cards, authentication can sometimes fail if non-standard keys are used
-4. DESFire cards require special formatting before NDEF data can be written
-
-## Mobile App Integration
-
-For the React Native mobile app integration, ensure the emulation function properly formats the NDEF message:
-
-1. Use the updated useEmulation hook that includes proper NDEF formatting
-2. Test with basic text records first before trying more complex formats
-3. Ensure text data is properly converted to hex format when needed
-
-## Hardware Requirements
-
-- PC/SC compliant NFC reader (ACR122U recommended)
-- Supported card types:
-  - MIFARE Classic (1K/4K)
-  - MIFARE Ultralight/NTAG (Type 2)
-  - DESFire (Type 4)
-  - Other ISO14443A compatible cards
+For COVID test data, the writer uses a specialized compact format:
+```json
+{"res":"p","ts":1743879763,"exp":1744138963,"lot":"25-04-123","mfg":1736899200,"shf":6}
+```
