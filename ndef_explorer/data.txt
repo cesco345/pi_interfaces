@@ -1,9 +1,9 @@
 {
-  "id": "card_1743832619319",
-  "name": "Card 00:04:00:00:09:00:01:02:00:02:01:00:09:00",
+  "id": "card_1743907363184",
+  "name": "Card 08:04:04:00:00:09:09:04",
   "applicationId": 1,
   "fileId": 1,
-  "fileData": "Hello beautiful ❤️",
+  "fileData": "Hello Mifare Classic!!!\n",
   "format": "desfire_ndef",
-  "exportDate": "2025-04-05T05:57:36.852Z"
+  "exportDate": "2025-04-06T02:43:44.864Z"
 }
